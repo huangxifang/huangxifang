@@ -1,0 +1,15 @@
+{
+  "name": "markbook",
+  "version": "1.0.0",
+  "description": "Personal blog site",
+  "main": "index.js",
+  "author": "huangxifang <2906568991@qq.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^2.0.0-beta.38"
+  },
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  }
+}
