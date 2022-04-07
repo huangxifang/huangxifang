@@ -188,7 +188,7 @@ const useRouteLocale = () => {
   return routeLocale;
 };
 const siteData$1 = {
-  "base": "/",
+  "base": "/huangxifang/",
   "lang": "zh-CN",
   "title": "\u9EC4\u897F\u65B9\u4E2A\u4EBA\u535A\u5BA2",
   "description": "\u4E2A\u4EBA\u535A\u5BA2\uFF0C\u8BB0\u5F55\u5DE5\u4F5C\u5185\u5BB9\u70B9\u6EF4",
@@ -1048,138 +1048,28 @@ const createVueApp = async () => {
 };
 const _sfc_main$w = {};
 function _sfc_ssrRender$c(_ctx, _push, _parent, _attrs) {
-  const _component_RouterLink = vue.resolveComponent("RouterLink");
-  _push(`<!--[--><h1 id="\u6307\u5357" tabindex="-1"><a class="header-anchor" href="#\u6307\u5357" aria-hidden="true">#</a> \u6307\u5357</h1><h2 id="linux" tabindex="-1"><a class="header-anchor" href="#linux" aria-hidden="true">#</a> Linux</h2><h3 id="linux\u5E38\u7528\u547D\u4EE4" tabindex="-1"><a class="header-anchor" href="#linux\u5E38\u7528\u547D\u4EE4" aria-hidden="true">#</a> `);
-  _push(serverRenderer.ssrRenderComponent(_component_RouterLink, { to: "/linux/command.html" }, {
-    default: vue.withCtx((_, _push2, _parent2, _scopeId) => {
-      if (_push2) {
-        _push2(`Linux\u5E38\u7528\u547D\u4EE4`);
-      } else {
-        return [
-          vue.createTextVNode("Linux\u5E38\u7528\u547D\u4EE4")
-        ];
-      }
-    }),
-    _: 1
-  }, _parent));
-  _push(`</h3><h2 id="git" tabindex="-1"><a class="header-anchor" href="#git" aria-hidden="true">#</a> Git</h2><h3 id="git\u5E38\u7528\u547D\u4EE4" tabindex="-1"><a class="header-anchor" href="#git\u5E38\u7528\u547D\u4EE4" aria-hidden="true">#</a> `);
-  _push(serverRenderer.ssrRenderComponent(_component_RouterLink, { to: "/git/common.html" }, {
-    default: vue.withCtx((_, _push2, _parent2, _scopeId) => {
-      if (_push2) {
-        _push2(`Git\u5E38\u7528\u547D\u4EE4`);
-      } else {
-        return [
-          vue.createTextVNode("Git\u5E38\u7528\u547D\u4EE4")
-        ];
-      }
-    }),
-    _: 1
-  }, _parent));
-  _push(`</h3><h3 id="git\u9879\u76EE\u5F00\u53D1\u5EFA\u8BAE" tabindex="-1"><a class="header-anchor" href="#git\u9879\u76EE\u5F00\u53D1\u5EFA\u8BAE" aria-hidden="true">#</a> `);
-  _push(serverRenderer.ssrRenderComponent(_component_RouterLink, { to: "/git/development.html" }, {
-    default: vue.withCtx((_, _push2, _parent2, _scopeId) => {
-      if (_push2) {
-        _push2(`Git\u9879\u76EE\u5F00\u53D1\u5EFA\u8BAE`);
-      } else {
-        return [
-          vue.createTextVNode("Git\u9879\u76EE\u5F00\u53D1\u5EFA\u8BAE")
-        ];
-      }
-    }),
-    _: 1
-  }, _parent));
-  _push(`</h3><h2 id="css" tabindex="-1"><a class="header-anchor" href="#css" aria-hidden="true">#</a> CSS</h2><h3 id="_49\u4E2A\u5728\u5DE5\u4F5C\u4E2D\u5E38\u7528\u4E14\u5BB9\u6613\u9057\u5FD8\u7684css\u6837\u5F0F\u6E05\u5355\u6574\u7406" tabindex="-1"><a class="header-anchor" href="#_49\u4E2A\u5728\u5DE5\u4F5C\u4E2D\u5E38\u7528\u4E14\u5BB9\u6613\u9057\u5FD8\u7684css\u6837\u5F0F\u6E05\u5355\u6574\u7406" aria-hidden="true">#</a> `);
-  _push(serverRenderer.ssrRenderComponent(_component_RouterLink, { to: "/css/easyToIgnore.html" }, {
-    default: vue.withCtx((_, _push2, _parent2, _scopeId) => {
-      if (_push2) {
-        _push2(`49\u4E2A\u5728\u5DE5\u4F5C\u4E2D\u5E38\u7528\u4E14\u5BB9\u6613\u9057\u5FD8\u7684CSS\u6837\u5F0F\u6E05\u5355\u6574\u7406`);
-      } else {
-        return [
-          vue.createTextVNode("49\u4E2A\u5728\u5DE5\u4F5C\u4E2D\u5E38\u7528\u4E14\u5BB9\u6613\u9057\u5FD8\u7684CSS\u6837\u5F0F\u6E05\u5355\u6574\u7406")
-        ];
-      }
-    }),
-    _: 1
-  }, _parent));
-  _push(`</h3><h2 id="php" tabindex="-1"><a class="header-anchor" href="#php" aria-hidden="true">#</a> PHP</h2><h3 id="\u65F6\u95F4\u5904\u7406" tabindex="-1"><a class="header-anchor" href="#\u65F6\u95F4\u5904\u7406" aria-hidden="true">#</a> `);
-  _push(serverRenderer.ssrRenderComponent(_component_RouterLink, { to: "/php/wechatTime.html" }, {
-    default: vue.withCtx((_, _push2, _parent2, _scopeId) => {
-      if (_push2) {
-        _push2(`\u65F6\u95F4\u5904\u7406`);
-      } else {
-        return [
-          vue.createTextVNode("\u65F6\u95F4\u5904\u7406")
-        ];
-      }
-    }),
-    _: 1
-  }, _parent));
-  _push(`</h3><h3 id="thinkphp" tabindex="-1"><a class="header-anchor" href="#thinkphp" aria-hidden="true">#</a> ThinkPHP</h3><h4 id="\u94A9\u5B50" tabindex="-1"><a class="header-anchor" href="#\u94A9\u5B50" aria-hidden="true">#</a> `);
-  _push(serverRenderer.ssrRenderComponent(_component_RouterLink, { to: "/php/thinkphp/hook.html" }, {
-    default: vue.withCtx((_, _push2, _parent2, _scopeId) => {
-      if (_push2) {
-        _push2(`\u94A9\u5B50`);
-      } else {
-        return [
-          vue.createTextVNode("\u94A9\u5B50")
-        ];
-      }
-    }),
-    _: 1
-  }, _parent));
-  _push(`</h4><h4 id="tp5\u5B9A\u65F6\u4EFB\u52A1" tabindex="-1"><a class="header-anchor" href="#tp5\u5B9A\u65F6\u4EFB\u52A1" aria-hidden="true">#</a> `);
-  _push(serverRenderer.ssrRenderComponent(_component_RouterLink, { to: "/php/thinkphp/cron.html" }, {
-    default: vue.withCtx((_, _push2, _parent2, _scopeId) => {
-      if (_push2) {
-        _push2(`TP5\u5B9A\u65F6\u4EFB\u52A1`);
-      } else {
-        return [
-          vue.createTextVNode("TP5\u5B9A\u65F6\u4EFB\u52A1")
-        ];
-      }
-    }),
-    _: 1
-  }, _parent));
-  _push(`</h4><h4 id="tp6\u5B89\u88C5think-swoole" tabindex="-1"><a class="header-anchor" href="#tp6\u5B89\u88C5think-swoole" aria-hidden="true">#</a> `);
-  _push(serverRenderer.ssrRenderComponent(_component_RouterLink, { to: "/php/thinkphp/swoole.html" }, {
-    default: vue.withCtx((_, _push2, _parent2, _scopeId) => {
-      if (_push2) {
-        _push2(`TP6\u5B89\u88C5think-swoole`);
-      } else {
-        return [
-          vue.createTextVNode("TP6\u5B89\u88C5think-swoole")
-        ];
-      }
-    }),
-    _: 1
-  }, _parent));
-  _push(`</h4><h2 id="npm" tabindex="-1"><a class="header-anchor" href="#npm" aria-hidden="true">#</a> NPM</h2><h3 id="npm\u8BBE\u7F6E\u6DD8\u5B9D\u955C\u50CF" tabindex="-1"><a class="header-anchor" href="#npm\u8BBE\u7F6E\u6DD8\u5B9D\u955C\u50CF" aria-hidden="true">#</a> `);
-  _push(serverRenderer.ssrRenderComponent(_component_RouterLink, { to: "/npm/configRegistry.html" }, {
-    default: vue.withCtx((_, _push2, _parent2, _scopeId) => {
-      if (_push2) {
-        _push2(`npm\u8BBE\u7F6E\u6DD8\u5B9D\u955C\u50CF`);
-      } else {
-        return [
-          vue.createTextVNode("npm\u8BBE\u7F6E\u6DD8\u5B9D\u955C\u50CF")
-        ];
-      }
-    }),
-    _: 1
-  }, _parent));
-  _push(`</h3><h2 id="yarn" tabindex="-1"><a class="header-anchor" href="#yarn" aria-hidden="true">#</a> Yarn</h2><h3 id="yarn\u5B89\u88C5" tabindex="-1"><a class="header-anchor" href="#yarn\u5B89\u88C5" aria-hidden="true">#</a> `);
-  _push(serverRenderer.ssrRenderComponent(_component_RouterLink, { to: "/yarn/install.html" }, {
-    default: vue.withCtx((_, _push2, _parent2, _scopeId) => {
-      if (_push2) {
-        _push2(`Yarn\u5B89\u88C5`);
-      } else {
-        return [
-          vue.createTextVNode("Yarn\u5B89\u88C5")
-        ];
-      }
-    }),
-    _: 1
-  }, _parent));
-  _push(`</h3><!--]-->`);
+  const _component_ExternalLinkIcon = vue.resolveComponent("ExternalLinkIcon");
+  _push(`<!--[--><h1 id="\u6307\u5357" tabindex="-1"><a class="header-anchor" href="#\u6307\u5357" aria-hidden="true">#</a> \u6307\u5357</h1><h2 id="linux" tabindex="-1"><a class="header-anchor" href="#linux" aria-hidden="true">#</a> Linux</h2><h3 id="linux\u5E38\u7528\u547D\u4EE4" tabindex="-1"><a class="header-anchor" href="#linux\u5E38\u7528\u547D\u4EE4" aria-hidden="true">#</a> <a href="/linux/command.md" target="_blank" rel="noopener noreferrer">Linux\u5E38\u7528\u547D\u4EE4`);
+  _push(serverRenderer.ssrRenderComponent(_component_ExternalLinkIcon, null, null, _parent));
+  _push(`</a></h3><h2 id="git" tabindex="-1"><a class="header-anchor" href="#git" aria-hidden="true">#</a> Git</h2><h3 id="git\u5E38\u7528\u547D\u4EE4" tabindex="-1"><a class="header-anchor" href="#git\u5E38\u7528\u547D\u4EE4" aria-hidden="true">#</a> <a href="/git/common.md" target="_blank" rel="noopener noreferrer">Git\u5E38\u7528\u547D\u4EE4`);
+  _push(serverRenderer.ssrRenderComponent(_component_ExternalLinkIcon, null, null, _parent));
+  _push(`</a></h3><h3 id="git\u9879\u76EE\u5F00\u53D1\u5EFA\u8BAE" tabindex="-1"><a class="header-anchor" href="#git\u9879\u76EE\u5F00\u53D1\u5EFA\u8BAE" aria-hidden="true">#</a> <a href="/git/development.md" target="_blank" rel="noopener noreferrer">Git\u9879\u76EE\u5F00\u53D1\u5EFA\u8BAE`);
+  _push(serverRenderer.ssrRenderComponent(_component_ExternalLinkIcon, null, null, _parent));
+  _push(`</a></h3><h2 id="css" tabindex="-1"><a class="header-anchor" href="#css" aria-hidden="true">#</a> CSS</h2><h3 id="_49\u4E2A\u5728\u5DE5\u4F5C\u4E2D\u5E38\u7528\u4E14\u5BB9\u6613\u9057\u5FD8\u7684css\u6837\u5F0F\u6E05\u5355\u6574\u7406" tabindex="-1"><a class="header-anchor" href="#_49\u4E2A\u5728\u5DE5\u4F5C\u4E2D\u5E38\u7528\u4E14\u5BB9\u6613\u9057\u5FD8\u7684css\u6837\u5F0F\u6E05\u5355\u6574\u7406" aria-hidden="true">#</a> <a href="/css/easyToIgnore.md" target="_blank" rel="noopener noreferrer">49\u4E2A\u5728\u5DE5\u4F5C\u4E2D\u5E38\u7528\u4E14\u5BB9\u6613\u9057\u5FD8\u7684CSS\u6837\u5F0F\u6E05\u5355\u6574\u7406`);
+  _push(serverRenderer.ssrRenderComponent(_component_ExternalLinkIcon, null, null, _parent));
+  _push(`</a></h3><h2 id="php" tabindex="-1"><a class="header-anchor" href="#php" aria-hidden="true">#</a> PHP</h2><h3 id="\u65F6\u95F4\u5904\u7406" tabindex="-1"><a class="header-anchor" href="#\u65F6\u95F4\u5904\u7406" aria-hidden="true">#</a> <a href="/php/wechatTime.md" target="_blank" rel="noopener noreferrer">\u65F6\u95F4\u5904\u7406`);
+  _push(serverRenderer.ssrRenderComponent(_component_ExternalLinkIcon, null, null, _parent));
+  _push(`</a></h3><h3 id="thinkphp" tabindex="-1"><a class="header-anchor" href="#thinkphp" aria-hidden="true">#</a> ThinkPHP</h3><h4 id="\u94A9\u5B50" tabindex="-1"><a class="header-anchor" href="#\u94A9\u5B50" aria-hidden="true">#</a> <a href="/php/thinkphp/hook.md" target="_blank" rel="noopener noreferrer">\u94A9\u5B50`);
+  _push(serverRenderer.ssrRenderComponent(_component_ExternalLinkIcon, null, null, _parent));
+  _push(`</a></h4><h4 id="tp5\u5B9A\u65F6\u4EFB\u52A1" tabindex="-1"><a class="header-anchor" href="#tp5\u5B9A\u65F6\u4EFB\u52A1" aria-hidden="true">#</a> <a href="/php/thinkphp/cron.md" target="_blank" rel="noopener noreferrer">TP5\u5B9A\u65F6\u4EFB\u52A1`);
+  _push(serverRenderer.ssrRenderComponent(_component_ExternalLinkIcon, null, null, _parent));
+  _push(`</a></h4><h4 id="tp6\u5B89\u88C5think-swoole" tabindex="-1"><a class="header-anchor" href="#tp6\u5B89\u88C5think-swoole" aria-hidden="true">#</a> <a href="/php/thinkphp/swoole.md" target="_blank" rel="noopener noreferrer">TP6\u5B89\u88C5think-swoole`);
+  _push(serverRenderer.ssrRenderComponent(_component_ExternalLinkIcon, null, null, _parent));
+  _push(`</a></h4><h2 id="npm" tabindex="-1"><a class="header-anchor" href="#npm" aria-hidden="true">#</a> NPM</h2><h3 id="npm\u8BBE\u7F6E\u6DD8\u5B9D\u955C\u50CF" tabindex="-1"><a class="header-anchor" href="#npm\u8BBE\u7F6E\u6DD8\u5B9D\u955C\u50CF" aria-hidden="true">#</a> <a href="/npm/configRegistry.md" target="_blank" rel="noopener noreferrer">npm\u8BBE\u7F6E\u6DD8\u5B9D\u955C\u50CF`);
+  _push(serverRenderer.ssrRenderComponent(_component_ExternalLinkIcon, null, null, _parent));
+  _push(`</a></h3><h2 id="yarn" tabindex="-1"><a class="header-anchor" href="#yarn" aria-hidden="true">#</a> Yarn</h2><h3 id="yarn\u5B89\u88C5" tabindex="-1"><a class="header-anchor" href="#yarn\u5B89\u88C5" aria-hidden="true">#</a> <a href="/yarn/install.md" target="_blank" rel="noopener noreferrer">Yarn\u5B89\u88C5`);
+  _push(serverRenderer.ssrRenderComponent(_component_ExternalLinkIcon, null, null, _parent));
+  _push(`</a></h3><!--]-->`);
 }
 const _sfc_setup$w = _sfc_main$w.setup;
 _sfc_main$w.setup = (props, ctx) => {
