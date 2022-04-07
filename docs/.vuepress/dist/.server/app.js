@@ -188,7 +188,7 @@ const useRouteLocale = () => {
   return routeLocale;
 };
 const siteData$1 = {
-  "base": "/",
+  "base": "/huangxifang/",
   "lang": "zh-CN",
   "title": "\u9EC4\u897F\u65B9\u4E2A\u4EBA\u535A\u5BA2",
   "description": "\u4E2A\u4EBA\u535A\u5BA2\uFF0C\u8BB0\u5F55\u5DE5\u4F5C\u5185\u5BB9\u70B9\u6EF4",

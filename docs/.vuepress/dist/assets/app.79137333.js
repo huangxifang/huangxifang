@@ -6941,7 +6941,7 @@ const ClientOnly = defineComponent({
 });
 const scriptRel = "modulepreload";
 const seen = {};
-const base = "/";
+const base = "/huangxifang/";
 const __vitePreload = function preload(baseModule, deps) {
   if (!deps || deps.length === 0) {
     return baseModule();
@@ -6975,51 +6975,51 @@ const __vitePreload = function preload(baseModule, deps) {
 const pagesComponents = {
   "v-8daa1a0e": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "v-8daa1a0e" */
-    "./index.html.cb95d71f.js"
+    "./index.html.54745004.js"
   ), true ? [] : void 0)),
   "v-224c7cf6": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "v-224c7cf6" */
-    "./easyToIgnore.html.f0174d2d.js"
+    "./easyToIgnore.html.0e88aaa9.js"
   ), true ? [] : void 0)),
   "v-aa042210": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "v-aa042210" */
-    "./common.html.e5aa98b6.js"
+    "./common.html.cfd64182.js"
   ), true ? [] : void 0)),
   "v-46d404d8": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "v-46d404d8" */
-    "./development.html.40ae0cf3.js"
+    "./development.html.c6c0f75a.js"
   ), true ? [] : void 0)),
   "v-8a42673c": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "v-8a42673c" */
-    "./command.html.a4ed8ad6.js"
+    "./command.html.ea8fa836.js"
   ), true ? [] : void 0)),
   "v-6bfe5e5d": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "v-6bfe5e5d" */
-    "./configRegistry.html.373f4cf3.js"
+    "./configRegistry.html.0aae0371.js"
   ), true ? [] : void 0)),
   "v-76bb3376": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "v-76bb3376" */
-    "./wechatTime.html.7916a5b7.js"
+    "./wechatTime.html.6270648d.js"
   ), true ? [] : void 0)),
   "v-f81671a0": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "v-f81671a0" */
-    "./install.html.b2f9b762.js"
+    "./install.html.636a3906.js"
   ), true ? [] : void 0)),
   "v-5a7523b2": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "v-5a7523b2" */
-    "./cron.html.080a8ccc.js"
+    "./cron.html.9e2a50f1.js"
   ), true ? [] : void 0)),
   "v-03093e3d": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "v-03093e3d" */
-    "./hook.html.e06d3584.js"
+    "./hook.html.80a329eb.js"
   ), true ? [] : void 0)),
   "v-57c453ba": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "v-57c453ba" */
-    "./swoole.html.a88a07d5.js"
+    "./swoole.html.79c41eca.js"
   ), true ? [] : void 0)),
   "v-3706649a": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "v-3706649a" */
-    "./404.html.dae86a30.js"
+    "./404.html.81ea2f04.js"
   ), true ? [] : void 0))
 };
 const pagesData$1 = {
@@ -7126,7 +7126,7 @@ const useRouteLocale = () => {
   return routeLocale;
 };
 const siteData$1 = {
-  "base": "/",
+  "base": "/huangxifang/",
   "lang": "zh-CN",
   "title": "\u9EC4\u897F\u65B9\u4E2A\u4EBA\u535A\u5BA2",
   "description": "\u4E2A\u4EBA\u535A\u5BA2\uFF0C\u8BB0\u5F55\u5DE5\u4F5C\u5185\u5BB9\u70B9\u6EF4",
@@ -7173,11 +7173,11 @@ Content.props = {
 const layoutComponents = {
   "404": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "layout-404" */
-    "./404.513c380c.js"
+    "./404.772349e5.js"
   ), true ? [] : void 0)),
   "Layout": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "layout-Layout" */
-    "./Layout.74c9aa3c.js"
+    "./Layout.cbb64bb7.js"
   ), true ? [] : void 0))
 };
 const resolveHeadIdentifier = ([tag, attrs, content]) => {

@@ -1,5 +1,5 @@
 module.exports = {
-  base:"/",
+  base:"/huangxifang/",
   // 站点配置
   lang: 'zh-CN',
   title: '黄西方个人博客',
