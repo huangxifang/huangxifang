@@ -204,7 +204,16 @@ const data = {
       ]
     }
   ],
-  "git": {},
+  "git": {
+    "updatedTime": 1649323648e3,
+    "contributors": [
+      {
+        "name": "huangxifang",
+        "email": "2906568991@qq.com",
+        "commits": 1
+      }
+    ]
+  },
   "filePathRelative": "linux/command.md"
 };
 export { data };

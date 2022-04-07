@@ -97,7 +97,16 @@ const data = {
       ]
     }
   ],
-  "git": {},
+  "git": {
+    "updatedTime": 1649327049e3,
+    "contributors": [
+      {
+        "name": "huangxifang",
+        "email": "2906568991@qq.com",
+        "commits": 2
+      }
+    ]
+  },
   "filePathRelative": "README.md"
 };
 export { data };
