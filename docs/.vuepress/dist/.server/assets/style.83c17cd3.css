@@ -1744,7 +1744,7 @@ a.sidebar-item:hover {
   width: 2rem;
   height: 1.2rem;
   background-color: var(--back-to-top-color);
-  mask: url('/assets/back-to-top.8efcbe56.svg') no-repeat;
+  mask: url('/huangxifang/assets/back-to-top.8efcbe56.svg') no-repeat;
   z-index: var(--back-to-top-z-index);
 }
 
