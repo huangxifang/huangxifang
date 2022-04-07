@@ -6941,7 +6941,7 @@ const ClientOnly = defineComponent({
 });
 const scriptRel = "modulepreload";
 const seen = {};
-const base = "/huangxifang/";
+const base = "/";
 const __vitePreload = function preload(baseModule, deps) {
   if (!deps || deps.length === 0) {
     return baseModule();
@@ -6975,51 +6975,51 @@ const __vitePreload = function preload(baseModule, deps) {
 const pagesComponents = {
   "v-8daa1a0e": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "v-8daa1a0e" */
-    "./index.html.935f7064.js"
+    "./index.html.cb95d71f.js"
   ), true ? [] : void 0)),
   "v-224c7cf6": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "v-224c7cf6" */
-    "./easyToIgnore.html.6e49c4df.js"
+    "./easyToIgnore.html.f0174d2d.js"
   ), true ? [] : void 0)),
   "v-aa042210": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "v-aa042210" */
-    "./common.html.ce7e8c0f.js"
+    "./common.html.e5aa98b6.js"
   ), true ? [] : void 0)),
   "v-46d404d8": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "v-46d404d8" */
-    "./development.html.02b4ef54.js"
-  ), true ? [] : void 0)),
-  "v-6bfe5e5d": defineAsyncComponent(() => __vitePreload(() => import(
-    /* webpackChunkName: "v-6bfe5e5d" */
-    "./configRegistry.html.225d44b2.js"
+    "./development.html.40ae0cf3.js"
   ), true ? [] : void 0)),
   "v-8a42673c": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "v-8a42673c" */
-    "./command.html.81e7a9d8.js"
+    "./command.html.a4ed8ad6.js"
+  ), true ? [] : void 0)),
+  "v-6bfe5e5d": defineAsyncComponent(() => __vitePreload(() => import(
+    /* webpackChunkName: "v-6bfe5e5d" */
+    "./configRegistry.html.373f4cf3.js"
   ), true ? [] : void 0)),
   "v-76bb3376": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "v-76bb3376" */
-    "./wechatTime.html.d2bd8412.js"
+    "./wechatTime.html.7916a5b7.js"
   ), true ? [] : void 0)),
   "v-f81671a0": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "v-f81671a0" */
-    "./install.html.db46bdef.js"
+    "./install.html.b2f9b762.js"
   ), true ? [] : void 0)),
   "v-5a7523b2": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "v-5a7523b2" */
-    "./cron.html.06f3f21b.js"
+    "./cron.html.080a8ccc.js"
   ), true ? [] : void 0)),
   "v-03093e3d": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "v-03093e3d" */
-    "./hook.html.45181c88.js"
+    "./hook.html.e06d3584.js"
   ), true ? [] : void 0)),
   "v-57c453ba": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "v-57c453ba" */
-    "./swoole.html.3136f42a.js"
+    "./swoole.html.a88a07d5.js"
   ), true ? [] : void 0)),
   "v-3706649a": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "v-3706649a" */
-    "./404.html.2e936c3f.js"
+    "./404.html.dae86a30.js"
   ), true ? [] : void 0))
 };
 const pagesData$1 = {
@@ -7039,13 +7039,13 @@ const pagesData$1 = {
     /* webpackChunkName: "v-46d404d8" */
     "./development.html.969e25a7.js"
   ), true ? [] : void 0).then(({ data }) => data),
-  "v-6bfe5e5d": () => __vitePreload(() => import(
-    /* webpackChunkName: "v-6bfe5e5d" */
-    "./configRegistry.html.6b573ed2.js"
-  ), true ? [] : void 0).then(({ data }) => data),
   "v-8a42673c": () => __vitePreload(() => import(
     /* webpackChunkName: "v-8a42673c" */
     "./command.html.d796a02a.js"
+  ), true ? [] : void 0).then(({ data }) => data),
+  "v-6bfe5e5d": () => __vitePreload(() => import(
+    /* webpackChunkName: "v-6bfe5e5d" */
+    "./configRegistry.html.6b573ed2.js"
   ), true ? [] : void 0).then(({ data }) => data),
   "v-76bb3376": () => __vitePreload(() => import(
     /* webpackChunkName: "v-76bb3376" */
@@ -7126,7 +7126,7 @@ const useRouteLocale = () => {
   return routeLocale;
 };
 const siteData$1 = {
-  "base": "/huangxifang/",
+  "base": "/",
   "lang": "zh-CN",
   "title": "\u9EC4\u897F\u65B9\u4E2A\u4EBA\u535A\u5BA2",
   "description": "\u4E2A\u4EBA\u535A\u5BA2\uFF0C\u8BB0\u5F55\u5DE5\u4F5C\u5185\u5BB9\u70B9\u6EF4",
@@ -7173,11 +7173,11 @@ Content.props = {
 const layoutComponents = {
   "404": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "layout-404" */
-    "./404.9246bcc5.js"
+    "./404.513c380c.js"
   ), true ? [] : void 0)),
   "Layout": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "layout-Layout" */
-    "./Layout.a9ea1c9f.js"
+    "./Layout.74c9aa3c.js"
   ), true ? [] : void 0))
 };
 const resolveHeadIdentifier = ([tag, attrs, content]) => {
@@ -8938,8 +8938,8 @@ const routeItems = [
   ["v-224c7cf6", "/css/easyToIgnore.html", { "title": "49\u4E2A\u5728\u5DE5\u4F5C\u4E2D\u5E38\u7528\u4E14\u5BB9\u6613\u9057\u5FD8\u7684CSS\u6837\u5F0F\u6E05\u5355\u6574\u7406" }, ["/css/easyToIgnore", "/css/easyToIgnore.md"]],
   ["v-aa042210", "/git/common.html", { "title": "Git\u5E38\u7528\u547D\u4EE4" }, ["/git/common", "/git/common.md"]],
   ["v-46d404d8", "/git/development.html", { "title": "Git\u5F00\u53D1\u6D41\u7A0B\u5EFA\u8BAE" }, ["/git/development", "/git/development.md"]],
-  ["v-6bfe5e5d", "/npm/configRegistry.html", { "title": "npm\u8BBE\u7F6E\u6DD8\u5B9D\u6E90" }, ["/npm/configRegistry", "/npm/configRegistry.md"]],
   ["v-8a42673c", "/linux/command.html", { "title": "Linux \u5E38\u7528\u547D\u4EE4" }, ["/linux/command", "/linux/command.md"]],
+  ["v-6bfe5e5d", "/npm/configRegistry.html", { "title": "npm\u8BBE\u7F6E\u6DD8\u5B9D\u6E90" }, ["/npm/configRegistry", "/npm/configRegistry.md"]],
   ["v-76bb3376", "/php/wechatTime.html", { "title": "\u65F6\u95F4\u5904\u7406" }, ["/php/wechatTime", "/php/wechatTime.md"]],
   ["v-f81671a0", "/yarn/install.html", { "title": "Yarn\u5B89\u88C5" }, ["/yarn/install", "/yarn/install.md"]],
   ["v-5a7523b2", "/php/thinkphp/cron.html", { "title": "TP5\u5B9A\u65F6\u4EFB\u52A1+\u5B9D\u5854\u8BA1\u5212\u4EFB\u52A1" }, ["/php/thinkphp/cron", "/php/thinkphp/cron.md"]],

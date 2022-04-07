@@ -71,11 +71,11 @@ const pagesComponents = {
   "v-46d404d8": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
     return development_html$2;
   })),
-  "v-6bfe5e5d": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return configRegistry_html$2;
-  })),
   "v-8a42673c": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
     return command_html$2;
+  })),
+  "v-6bfe5e5d": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
+    return configRegistry_html$2;
   })),
   "v-76bb3376": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
     return wechatTime_html$2;
@@ -109,11 +109,11 @@ const pagesData$1 = {
   "v-46d404d8": () => Promise.resolve().then(function() {
     return development_html;
   }).then(({ data: data2 }) => data2),
-  "v-6bfe5e5d": () => Promise.resolve().then(function() {
-    return configRegistry_html;
-  }).then(({ data: data2 }) => data2),
   "v-8a42673c": () => Promise.resolve().then(function() {
     return command_html;
+  }).then(({ data: data2 }) => data2),
+  "v-6bfe5e5d": () => Promise.resolve().then(function() {
+    return configRegistry_html;
   }).then(({ data: data2 }) => data2),
   "v-76bb3376": () => Promise.resolve().then(function() {
     return wechatTime_html;
@@ -188,7 +188,7 @@ const useRouteLocale = () => {
   return routeLocale;
 };
 const siteData$1 = {
-  "base": "/huangxifang/",
+  "base": "/",
   "lang": "zh-CN",
   "title": "\u9EC4\u897F\u65B9\u4E2A\u4EBA\u535A\u5BA2",
   "description": "\u4E2A\u4EBA\u535A\u5BA2\uFF0C\u8BB0\u5F55\u5DE5\u4F5C\u5185\u5BB9\u70B9\u6EF4",
@@ -916,8 +916,8 @@ const routeItems = [
   ["v-224c7cf6", "/css/easyToIgnore.html", { "title": "49\u4E2A\u5728\u5DE5\u4F5C\u4E2D\u5E38\u7528\u4E14\u5BB9\u6613\u9057\u5FD8\u7684CSS\u6837\u5F0F\u6E05\u5355\u6574\u7406" }, ["/css/easyToIgnore", "/css/easyToIgnore.md"]],
   ["v-aa042210", "/git/common.html", { "title": "Git\u5E38\u7528\u547D\u4EE4" }, ["/git/common", "/git/common.md"]],
   ["v-46d404d8", "/git/development.html", { "title": "Git\u5F00\u53D1\u6D41\u7A0B\u5EFA\u8BAE" }, ["/git/development", "/git/development.md"]],
-  ["v-6bfe5e5d", "/npm/configRegistry.html", { "title": "npm\u8BBE\u7F6E\u6DD8\u5B9D\u6E90" }, ["/npm/configRegistry", "/npm/configRegistry.md"]],
   ["v-8a42673c", "/linux/command.html", { "title": "Linux \u5E38\u7528\u547D\u4EE4" }, ["/linux/command", "/linux/command.md"]],
+  ["v-6bfe5e5d", "/npm/configRegistry.html", { "title": "npm\u8BBE\u7F6E\u6DD8\u5B9D\u6E90" }, ["/npm/configRegistry", "/npm/configRegistry.md"]],
   ["v-76bb3376", "/php/wechatTime.html", { "title": "\u65F6\u95F4\u5904\u7406" }, ["/php/wechatTime", "/php/wechatTime.md"]],
   ["v-f81671a0", "/yarn/install.html", { "title": "Yarn\u5B89\u88C5" }, ["/yarn/install", "/yarn/install.md"]],
   ["v-5a7523b2", "/php/thinkphp/cron.html", { "title": "TP5\u5B9A\u65F6\u4EFB\u52A1+\u5B9D\u5854\u8BA1\u5212\u4EFB\u52A1" }, ["/php/thinkphp/cron", "/php/thinkphp/cron.md"]],
@@ -1716,23 +1716,6 @@ var development_html$2 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.de
 }, Symbol.toStringTag, { value: "Module" }));
 const _sfc_main$s = {};
 function _sfc_ssrRender$8(_ctx, _push, _parent, _attrs) {
-  _push(`<!--[--><h1 id="npm\u8BBE\u7F6E\u6DD8\u5B9D\u6E90" tabindex="-1"><a class="header-anchor" href="#npm\u8BBE\u7F6E\u6DD8\u5B9D\u6E90" aria-hidden="true">#</a> npm\u8BBE\u7F6E\u6DD8\u5B9D\u6E90</h1><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code><span class="token function">npm</span> config <span class="token builtin class-name">set</span> registry http://registry.npm.taobao.org/
-</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br></div></div><p>\u8FD8\u539F</p><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code><span class="token function">npm</span> config <span class="token builtin class-name">set</span> registry https://registry.npmjs.org/
-</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br></div></div><!--]-->`);
-}
-const _sfc_setup$s = _sfc_main$s.setup;
-_sfc_main$s.setup = (props, ctx) => {
-  const ssrContext = vue.useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../pages/npm/configRegistry.html.vue");
-  return _sfc_setup$s ? _sfc_setup$s(props, ctx) : void 0;
-};
-var configRegistry_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$s, [["ssrRender", _sfc_ssrRender$8], ["__file", "configRegistry.html.vue"]]);
-var configRegistry_html$2 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
-  __proto__: null,
-  "default": configRegistry_html$1
-}, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$r = {};
-function _sfc_ssrRender$7(_ctx, _push, _parent, _attrs) {
   _push(`<!--[--><h1 id="linux-\u5E38\u7528\u547D\u4EE4" tabindex="-1"><a class="header-anchor" href="#linux-\u5E38\u7528\u547D\u4EE4" aria-hidden="true">#</a> Linux \u5E38\u7528\u547D\u4EE4</h1><h2 id="\u67E5\u627E\u76EE\u5F55" tabindex="-1"><a class="header-anchor" href="#\u67E5\u627E\u76EE\u5F55" aria-hidden="true">#</a> \u67E5\u627E\u76EE\u5F55</h2><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code><span class="token function">find</span> / -name <span class="token string">&#39;\u67E5\u627E\u5173\u952E\u5B57&#39;</span> -type d
 </code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br></div></div><p><strong>tips:</strong> <code>/</code> \u4E3A\u67E5\u627E\u8303\u56F4</p><h2 id="\u67E5\u627E\u6587\u4EF6" tabindex="-1"><a class="header-anchor" href="#\u67E5\u627E\u6587\u4EF6" aria-hidden="true">#</a> \u67E5\u627E\u6587\u4EF6</h2><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code><span class="token function">find</span> / -name <span class="token string">&#39;\u67E5\u627E\u5173\u952E\u5B57&#39;</span> -print
 </code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br></div></div><h2 id="\u89E3\u538B\u538B\u7F29\u5305" tabindex="-1"><a class="header-anchor" href="#\u89E3\u538B\u538B\u7F29\u5305" aria-hidden="true">#</a> \u89E3\u538B\u538B\u7F29\u5305</h2><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code><span class="token function">tar</span> -zxvf \u538B\u7F29\u5305\u540D\u79F0
@@ -1748,16 +1731,33 @@ function _sfc_ssrRender$7(_ctx, _push, _parent, _attrs) {
 </code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h3 id="_19-kill\u547D\u4EE4" tabindex="-1"><a class="header-anchor" href="#_19-kill\u547D\u4EE4" aria-hidden="true">#</a> <strong>19. kill\u547D\u4EE4</strong></h3><p>\u7528\u4E8E\u5411\u67D0\u4E2A\u5DE5\u4F5C\uFF08%jobnumber\uFF09\u6216\u8005\u662F\u67D0\u4E2APID\uFF08\u6570\u5B57\uFF09\u4F20\u9001\u4E00\u4E2A\u4FE1\u53F7\uFF0C\u5B83\u901A\u5E38\u4E0Eps\u548Cjobs\u547D\u4EE4\u4E00\u8D77\u4F7F\u7528\uFF1A</p><h3 id="_20-killall\u547D\u4EE4" tabindex="-1"><a class="header-anchor" href="#_20-killall\u547D\u4EE4" aria-hidden="true">#</a> <strong>20. killall\u547D\u4EE4</strong></h3><p>\uFF08\u5411\u4E00\u4E2A\u547D\u4EE4\u542F\u52A8\u7684\u8FDB\u7A0B\u53D1\u9001\u4E00\u4E2A\u4FE1\u53F7\uFF09</p><h3 id="_21-top\u547D\u4EE4" tabindex="-1"><a class="header-anchor" href="#_21-top\u547D\u4EE4" aria-hidden="true">#</a> <strong>21. top\u547D\u4EE4</strong></h3><p>\u662FLinux\u4E0B\u5E38\u7528\u7684\u6027\u80FD\u5206\u6790\u5DE5\u5177\uFF0C\u80FD\u591F\u5B9E\u65F6\u663E\u793A\u7CFB\u7EDF\u4E2D\u5404\u4E2A\u8FDB\u7A0B\u7684\u8D44\u6E90\u5360\u7528\u72B6\u51B5\uFF0C\u7C7B\u4F3C\u4E8EWindows\u7684\u4EFB\u52A1\u7BA1\u7406\u5668\u3002</p><p>\u5982\u4F55\u6740\u6B7B\u8FDB\u7A0B\uFF1A</p><ul><li>\u56FE\u5F62\u5316\u754C\u9762\u7684\u65B9\u5F0F</li><li>kill -9 pid \uFF08-9\u8868\u793A\u5F3A\u5236\u5173\u95ED\uFF09</li><li>killall -9 \u7A0B\u5E8F\u7684\u540D\u5B57</li><li>pkill \u7A0B\u5E8F\u7684\u540D\u5B57</li></ul><p>\u67E5\u770B\u8FDB\u7A0B\u7AEF\u53E3\u53F7\uFF1A</p><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code><span class="token function">netstat</span> -tunlp<span class="token operator">|</span><span class="token function">grep</span> \u7AEF\u53E3\u53F7
 </code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br></div></div><!--]-->`);
 }
-const _sfc_setup$r = _sfc_main$r.setup;
-_sfc_main$r.setup = (props, ctx) => {
+const _sfc_setup$s = _sfc_main$s.setup;
+_sfc_main$s.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../pages/linux/command.html.vue");
-  return _sfc_setup$r ? _sfc_setup$r(props, ctx) : void 0;
+  return _sfc_setup$s ? _sfc_setup$s(props, ctx) : void 0;
 };
-var command_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$r, [["ssrRender", _sfc_ssrRender$7], ["__file", "command.html.vue"]]);
+var command_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$s, [["ssrRender", _sfc_ssrRender$8], ["__file", "command.html.vue"]]);
 var command_html$2 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": command_html$1
+}, Symbol.toStringTag, { value: "Module" }));
+const _sfc_main$r = {};
+function _sfc_ssrRender$7(_ctx, _push, _parent, _attrs) {
+  _push(`<!--[--><h1 id="npm\u8BBE\u7F6E\u6DD8\u5B9D\u6E90" tabindex="-1"><a class="header-anchor" href="#npm\u8BBE\u7F6E\u6DD8\u5B9D\u6E90" aria-hidden="true">#</a> npm\u8BBE\u7F6E\u6DD8\u5B9D\u6E90</h1><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code><span class="token function">npm</span> config <span class="token builtin class-name">set</span> registry http://registry.npm.taobao.org/
+</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br></div></div><p>\u8FD8\u539F</p><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code><span class="token function">npm</span> config <span class="token builtin class-name">set</span> registry https://registry.npmjs.org/
+</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br></div></div><!--]-->`);
+}
+const _sfc_setup$r = _sfc_main$r.setup;
+_sfc_main$r.setup = (props, ctx) => {
+  const ssrContext = vue.useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../pages/npm/configRegistry.html.vue");
+  return _sfc_setup$r ? _sfc_setup$r(props, ctx) : void 0;
+};
+var configRegistry_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$r, [["ssrRender", _sfc_ssrRender$7], ["__file", "configRegistry.html.vue"]]);
+var configRegistry_html$2 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": configRegistry_html$1
 }, Symbol.toStringTag, { value: "Module" }));
 const _sfc_main$q = {};
 function _sfc_ssrRender$6(_ctx, _push, _parent, _attrs) {
@@ -2484,30 +2484,6 @@ var development_html = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defi
   data: data$8
 }, Symbol.toStringTag, { value: "Module" }));
 const data$7 = {
-  "key": "v-6bfe5e5d",
-  "path": "/npm/configRegistry.html",
-  "title": "npm\u8BBE\u7F6E\u6DD8\u5B9D\u6E90",
-  "lang": "zh-CN",
-  "frontmatter": {},
-  "excerpt": "",
-  "headers": [],
-  "git": {
-    "updatedTime": 1649323648e3,
-    "contributors": [
-      {
-        "name": "huangxifang",
-        "email": "2906568991@qq.com",
-        "commits": 1
-      }
-    ]
-  },
-  "filePathRelative": "npm/configRegistry.md"
-};
-var configRegistry_html = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
-  __proto__: null,
-  data: data$7
-}, Symbol.toStringTag, { value: "Module" }));
-const data$6 = {
   "key": "v-8a42673c",
   "path": "/linux/command.html",
   "title": "Linux \u5E38\u7528\u547D\u4EE4",
@@ -2726,6 +2702,30 @@ const data$6 = {
   "filePathRelative": "linux/command.md"
 };
 var command_html = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  data: data$7
+}, Symbol.toStringTag, { value: "Module" }));
+const data$6 = {
+  "key": "v-6bfe5e5d",
+  "path": "/npm/configRegistry.html",
+  "title": "npm\u8BBE\u7F6E\u6DD8\u5B9D\u6E90",
+  "lang": "zh-CN",
+  "frontmatter": {},
+  "excerpt": "",
+  "headers": [],
+  "git": {
+    "updatedTime": 1649323648e3,
+    "contributors": [
+      {
+        "name": "huangxifang",
+        "email": "2906568991@qq.com",
+        "commits": 1
+      }
+    ]
+  },
+  "filePathRelative": "npm/configRegistry.md"
+};
+var configRegistry_html = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   data: data$6
 }, Symbol.toStringTag, { value: "Module" }));
