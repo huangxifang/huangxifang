@@ -6975,57 +6975,57 @@ const __vitePreload = function preload(baseModule, deps) {
 const pagesComponents = {
   "v-8daa1a0e": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "v-8daa1a0e" */
-    "./index.html.e5b2588f.js"
+    "./index.html.935f7064.js"
   ), true ? [] : void 0)),
   "v-224c7cf6": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "v-224c7cf6" */
-    "./easyToIgnore.html.3c7c248d.js"
+    "./easyToIgnore.html.6e49c4df.js"
   ), true ? [] : void 0)),
   "v-aa042210": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "v-aa042210" */
-    "./common.html.5f683a35.js"
+    "./common.html.ce7e8c0f.js"
   ), true ? [] : void 0)),
   "v-46d404d8": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "v-46d404d8" */
-    "./development.html.a96d445e.js"
+    "./development.html.02b4ef54.js"
   ), true ? [] : void 0)),
   "v-6bfe5e5d": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "v-6bfe5e5d" */
-    "./configRegistry.html.84924c78.js"
+    "./configRegistry.html.225d44b2.js"
   ), true ? [] : void 0)),
   "v-8a42673c": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "v-8a42673c" */
-    "./command.html.aca2dda3.js"
+    "./command.html.81e7a9d8.js"
   ), true ? [] : void 0)),
   "v-76bb3376": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "v-76bb3376" */
-    "./wechatTime.html.6d81799b.js"
+    "./wechatTime.html.d2bd8412.js"
   ), true ? [] : void 0)),
   "v-f81671a0": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "v-f81671a0" */
-    "./install.html.22832b2a.js"
+    "./install.html.db46bdef.js"
   ), true ? [] : void 0)),
   "v-5a7523b2": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "v-5a7523b2" */
-    "./cron.html.df982b9d.js"
+    "./cron.html.06f3f21b.js"
   ), true ? [] : void 0)),
   "v-03093e3d": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "v-03093e3d" */
-    "./hook.html.b1319ea4.js"
+    "./hook.html.45181c88.js"
   ), true ? [] : void 0)),
   "v-57c453ba": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "v-57c453ba" */
-    "./swoole.html.1a91ad7a.js"
+    "./swoole.html.3136f42a.js"
   ), true ? [] : void 0)),
   "v-3706649a": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "v-3706649a" */
-    "./404.html.211940c9.js"
+    "./404.html.2e936c3f.js"
   ), true ? [] : void 0))
 };
 const pagesData$1 = {
   "v-8daa1a0e": () => __vitePreload(() => import(
     /* webpackChunkName: "v-8daa1a0e" */
-    "./index.html.9cdc74cd.js"
+    "./index.html.f2d142cb.js"
   ), true ? [] : void 0).then(({ data }) => data),
   "v-224c7cf6": () => __vitePreload(() => import(
     /* webpackChunkName: "v-224c7cf6" */
@@ -7173,11 +7173,11 @@ Content.props = {
 const layoutComponents = {
   "404": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "layout-404" */
-    "./404.7d29399f.js"
+    "./404.9246bcc5.js"
   ), true ? [] : void 0)),
   "Layout": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "layout-Layout" */
-    "./Layout.8d7a27a3.js"
+    "./Layout.a9ea1c9f.js"
   ), true ? [] : void 0))
 };
 const resolveHeadIdentifier = ([tag, attrs, content]) => {
