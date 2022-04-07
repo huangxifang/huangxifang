@@ -74,11 +74,11 @@ const pagesComponents = {
   "v-8a42673c": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
     return command_html$2;
   })),
-  "v-76bb3376": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return wechatTime_html$2;
-  })),
   "v-6bfe5e5d": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
     return configRegistry_html$2;
+  })),
+  "v-76bb3376": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
+    return wechatTime_html$2;
   })),
   "v-f81671a0": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
     return install_html$2;
@@ -112,11 +112,11 @@ const pagesData$1 = {
   "v-8a42673c": () => Promise.resolve().then(function() {
     return command_html;
   }).then(({ data: data2 }) => data2),
-  "v-76bb3376": () => Promise.resolve().then(function() {
-    return wechatTime_html;
-  }).then(({ data: data2 }) => data2),
   "v-6bfe5e5d": () => Promise.resolve().then(function() {
     return configRegistry_html;
+  }).then(({ data: data2 }) => data2),
+  "v-76bb3376": () => Promise.resolve().then(function() {
+    return wechatTime_html;
   }).then(({ data: data2 }) => data2),
   "v-f81671a0": () => Promise.resolve().then(function() {
     return install_html;
@@ -917,8 +917,8 @@ const routeItems = [
   ["v-aa042210", "/git/common.html", { "title": "Git\u5E38\u7528\u547D\u4EE4" }, ["/git/common", "/git/common.md"]],
   ["v-46d404d8", "/git/development.html", { "title": "Git\u5F00\u53D1\u6D41\u7A0B\u5EFA\u8BAE" }, ["/git/development", "/git/development.md"]],
   ["v-8a42673c", "/linux/command.html", { "title": "Linux \u5E38\u7528\u547D\u4EE4" }, ["/linux/command", "/linux/command.md"]],
-  ["v-76bb3376", "/php/wechatTime.html", { "title": "\u65F6\u95F4\u5904\u7406" }, ["/php/wechatTime", "/php/wechatTime.md"]],
   ["v-6bfe5e5d", "/npm/configRegistry.html", { "title": "npm\u8BBE\u7F6E\u6DD8\u5B9D\u6E90" }, ["/npm/configRegistry", "/npm/configRegistry.md"]],
+  ["v-76bb3376", "/php/wechatTime.html", { "title": "\u65F6\u95F4\u5904\u7406" }, ["/php/wechatTime", "/php/wechatTime.md"]],
   ["v-f81671a0", "/yarn/install.html", { "title": "Yarn\u5B89\u88C5" }, ["/yarn/install", "/yarn/install.md"]],
   ["v-5a7523b2", "/php/thinkphp/cron.html", { "title": "TP5\u5B9A\u65F6\u4EFB\u52A1+\u5B9D\u5854\u8BA1\u5212\u4EFB\u52A1" }, ["/php/thinkphp/cron", "/php/thinkphp/cron.md"]],
   ["v-03093e3d", "/php/thinkphp/hook.html", { "title": "TP\u6846\u67B6\u884C\u4E3A\u94A9\u5B50\u4F7F\u7528\u65B9\u6CD5" }, ["/php/thinkphp/hook", "/php/thinkphp/hook.md"]],
@@ -1744,6 +1744,23 @@ var command_html$2 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.define
 }, Symbol.toStringTag, { value: "Module" }));
 const _sfc_main$r = {};
 function _sfc_ssrRender$7(_ctx, _push, _parent, _attrs) {
+  _push(`<!--[--><h1 id="npm\u8BBE\u7F6E\u6DD8\u5B9D\u6E90" tabindex="-1"><a class="header-anchor" href="#npm\u8BBE\u7F6E\u6DD8\u5B9D\u6E90" aria-hidden="true">#</a> npm\u8BBE\u7F6E\u6DD8\u5B9D\u6E90</h1><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code><span class="token function">npm</span> config <span class="token builtin class-name">set</span> registry http://registry.npm.taobao.org/
+</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br></div></div><p>\u8FD8\u539F</p><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code><span class="token function">npm</span> config <span class="token builtin class-name">set</span> registry https://registry.npmjs.org/
+</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br></div></div><!--]-->`);
+}
+const _sfc_setup$r = _sfc_main$r.setup;
+_sfc_main$r.setup = (props, ctx) => {
+  const ssrContext = vue.useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../pages/npm/configRegistry.html.vue");
+  return _sfc_setup$r ? _sfc_setup$r(props, ctx) : void 0;
+};
+var configRegistry_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$r, [["ssrRender", _sfc_ssrRender$7], ["__file", "configRegistry.html.vue"]]);
+var configRegistry_html$2 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": configRegistry_html$1
+}, Symbol.toStringTag, { value: "Module" }));
+const _sfc_main$q = {};
+function _sfc_ssrRender$6(_ctx, _push, _parent, _attrs) {
   _push(`<!--[--><h1 id="\u65F6\u95F4\u5904\u7406" tabindex="-1"><a class="header-anchor" href="#\u65F6\u95F4\u5904\u7406" aria-hidden="true">#</a> \u65F6\u95F4\u5904\u7406</h1><h2 id="\u5224\u65AD\u4E0A\u5348\u8FD8\u662F\u4E0B\u5348" tabindex="-1"><a class="header-anchor" href="#\u5224\u65AD\u4E0A\u5348\u8FD8\u662F\u4E0B\u5348" aria-hidden="true">#</a> \u5224\u65AD\u4E0A\u5348\u8FD8\u662F\u4E0B\u5348</h2><blockquote><p>php\u5224\u65AD\u4E0A\u5348\u8FD8\u662F\u4E0B\u5348\u7684\u5B9E\u73B0\u65B9\u6CD5\uFF1A\u9996\u5148\u8BBE\u7F6E\u4E2D\u56FD\u65F6\u533A\uFF1B\u7136\u540E\u5B9A\u4E49\u4E00\u4E2AGetDateTime\u65B9\u6CD5\uFF1B\u7136\u540E\u901A\u8FC7if else\u8BED\u53E5\u5224\u65AD\u5F53\u524D\u65F6\u95F4\u662F\u4E0A\u5348\u8FD8\u662F\u4E0B\u5348\uFF1B\u6700\u540E\u8F93\u51FA\u5224\u65AD\u7ED3\u679C\u5373\u53EF\u3002</p></blockquote><p>\u6839\u636E\u5F53\u524D\u65F6\u95F4\u5224\u65AD\u4E0A\u5348\u597D\u3001\u4E0B\u5348\u597D</p><div class="language-php ext-php line-numbers-mode"><pre class="language-php"><code><span class="token function">header</span><span class="token punctuation">(</span><span class="token string double-quoted-string">&quot;Content-type:text/html;charset=utf-8&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
 <span class="token function">date_default_timezone_set</span><span class="token punctuation">(</span><span class="token string single-quoted-string">&#39;PRC&#39;</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//\u8BBE\u7F6E\u4E2D\u56FD\u65F6\u533A</span>
@@ -1832,33 +1849,16 @@ function _sfc_ssrRender$7(_ctx, _push, _parent, _attrs) {
     <span class="token punctuation">}</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br></div></div><!--]-->`);
 }
-const _sfc_setup$r = _sfc_main$r.setup;
-_sfc_main$r.setup = (props, ctx) => {
-  const ssrContext = vue.useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../pages/php/wechatTime.html.vue");
-  return _sfc_setup$r ? _sfc_setup$r(props, ctx) : void 0;
-};
-var wechatTime_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$r, [["ssrRender", _sfc_ssrRender$7], ["__file", "wechatTime.html.vue"]]);
-var wechatTime_html$2 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
-  __proto__: null,
-  "default": wechatTime_html$1
-}, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$q = {};
-function _sfc_ssrRender$6(_ctx, _push, _parent, _attrs) {
-  _push(`<!--[--><h1 id="npm\u8BBE\u7F6E\u6DD8\u5B9D\u6E90" tabindex="-1"><a class="header-anchor" href="#npm\u8BBE\u7F6E\u6DD8\u5B9D\u6E90" aria-hidden="true">#</a> npm\u8BBE\u7F6E\u6DD8\u5B9D\u6E90</h1><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code><span class="token function">npm</span> config <span class="token builtin class-name">set</span> registry http://registry.npm.taobao.org/
-</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br></div></div><p>\u8FD8\u539F</p><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code><span class="token function">npm</span> config <span class="token builtin class-name">set</span> registry https://registry.npmjs.org/
-</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br></div></div><!--]-->`);
-}
 const _sfc_setup$q = _sfc_main$q.setup;
 _sfc_main$q.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../pages/npm/configRegistry.html.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../pages/php/wechatTime.html.vue");
   return _sfc_setup$q ? _sfc_setup$q(props, ctx) : void 0;
 };
-var configRegistry_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$q, [["ssrRender", _sfc_ssrRender$6], ["__file", "configRegistry.html.vue"]]);
-var configRegistry_html$2 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var wechatTime_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$q, [["ssrRender", _sfc_ssrRender$6], ["__file", "wechatTime.html.vue"]]);
+var wechatTime_html$2 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  "default": configRegistry_html$1
+  "default": wechatTime_html$1
 }, Symbol.toStringTag, { value: "Module" }));
 const _sfc_main$p = {};
 function _sfc_ssrRender$5(_ctx, _push, _parent, _attrs) {
@@ -2706,6 +2706,30 @@ var command_html = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.definePr
   data: data$7
 }, Symbol.toStringTag, { value: "Module" }));
 const data$6 = {
+  "key": "v-6bfe5e5d",
+  "path": "/npm/configRegistry.html",
+  "title": "npm\u8BBE\u7F6E\u6DD8\u5B9D\u6E90",
+  "lang": "zh-CN",
+  "frontmatter": {},
+  "excerpt": "",
+  "headers": [],
+  "git": {
+    "updatedTime": 1649323648e3,
+    "contributors": [
+      {
+        "name": "huangxifang",
+        "email": "2906568991@qq.com",
+        "commits": 1
+      }
+    ]
+  },
+  "filePathRelative": "npm/configRegistry.md"
+};
+var configRegistry_html = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  data: data$6
+}, Symbol.toStringTag, { value: "Module" }));
+const data$5 = {
   "key": "v-76bb3376",
   "path": "/php/wechatTime.html",
   "title": "\u65F6\u95F4\u5904\u7406",
@@ -2745,30 +2769,6 @@ const data$6 = {
   "filePathRelative": "php/wechatTime.md"
 };
 var wechatTime_html = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
-  __proto__: null,
-  data: data$6
-}, Symbol.toStringTag, { value: "Module" }));
-const data$5 = {
-  "key": "v-6bfe5e5d",
-  "path": "/npm/configRegistry.html",
-  "title": "npm\u8BBE\u7F6E\u6DD8\u5B9D\u6E90",
-  "lang": "zh-CN",
-  "frontmatter": {},
-  "excerpt": "",
-  "headers": [],
-  "git": {
-    "updatedTime": 1649323648e3,
-    "contributors": [
-      {
-        "name": "huangxifang",
-        "email": "2906568991@qq.com",
-        "commits": 1
-      }
-    ]
-  },
-  "filePathRelative": "npm/configRegistry.md"
-};
-var configRegistry_html = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   data: data$5
 }, Symbol.toStringTag, { value: "Module" }));

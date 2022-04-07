@@ -6975,51 +6975,51 @@ const __vitePreload = function preload(baseModule, deps) {
 const pagesComponents = {
   "v-8daa1a0e": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "v-8daa1a0e" */
-    "./index.html.f78aab05.js"
+    "./index.html.cb95d71f.js"
   ), true ? [] : void 0)),
   "v-224c7cf6": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "v-224c7cf6" */
-    "./easyToIgnore.html.3d303ea8.js"
+    "./easyToIgnore.html.f0174d2d.js"
   ), true ? [] : void 0)),
   "v-aa042210": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "v-aa042210" */
-    "./common.html.88486452.js"
+    "./common.html.e5aa98b6.js"
   ), true ? [] : void 0)),
   "v-46d404d8": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "v-46d404d8" */
-    "./development.html.3ed13edd.js"
+    "./development.html.40ae0cf3.js"
   ), true ? [] : void 0)),
   "v-8a42673c": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "v-8a42673c" */
-    "./command.html.eacaebdd.js"
-  ), true ? [] : void 0)),
-  "v-76bb3376": defineAsyncComponent(() => __vitePreload(() => import(
-    /* webpackChunkName: "v-76bb3376" */
-    "./wechatTime.html.0e918a3b.js"
+    "./command.html.a4ed8ad6.js"
   ), true ? [] : void 0)),
   "v-6bfe5e5d": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "v-6bfe5e5d" */
-    "./configRegistry.html.ba648a79.js"
+    "./configRegistry.html.373f4cf3.js"
+  ), true ? [] : void 0)),
+  "v-76bb3376": defineAsyncComponent(() => __vitePreload(() => import(
+    /* webpackChunkName: "v-76bb3376" */
+    "./wechatTime.html.7916a5b7.js"
   ), true ? [] : void 0)),
   "v-f81671a0": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "v-f81671a0" */
-    "./install.html.cf405c54.js"
+    "./install.html.b2f9b762.js"
   ), true ? [] : void 0)),
   "v-5a7523b2": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "v-5a7523b2" */
-    "./cron.html.7375db0a.js"
+    "./cron.html.080a8ccc.js"
   ), true ? [] : void 0)),
   "v-03093e3d": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "v-03093e3d" */
-    "./hook.html.c23b6faa.js"
+    "./hook.html.e06d3584.js"
   ), true ? [] : void 0)),
   "v-57c453ba": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "v-57c453ba" */
-    "./swoole.html.45d36110.js"
+    "./swoole.html.a88a07d5.js"
   ), true ? [] : void 0)),
   "v-3706649a": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "v-3706649a" */
-    "./404.html.31953166.js"
+    "./404.html.dae86a30.js"
   ), true ? [] : void 0))
 };
 const pagesData$1 = {
@@ -7043,13 +7043,13 @@ const pagesData$1 = {
     /* webpackChunkName: "v-8a42673c" */
     "./command.html.d796a02a.js"
   ), true ? [] : void 0).then(({ data }) => data),
-  "v-76bb3376": () => __vitePreload(() => import(
-    /* webpackChunkName: "v-76bb3376" */
-    "./wechatTime.html.3ab9e41b.js"
-  ), true ? [] : void 0).then(({ data }) => data),
   "v-6bfe5e5d": () => __vitePreload(() => import(
     /* webpackChunkName: "v-6bfe5e5d" */
     "./configRegistry.html.6b573ed2.js"
+  ), true ? [] : void 0).then(({ data }) => data),
+  "v-76bb3376": () => __vitePreload(() => import(
+    /* webpackChunkName: "v-76bb3376" */
+    "./wechatTime.html.3ab9e41b.js"
   ), true ? [] : void 0).then(({ data }) => data),
   "v-f81671a0": () => __vitePreload(() => import(
     /* webpackChunkName: "v-f81671a0" */
@@ -7173,11 +7173,11 @@ Content.props = {
 const layoutComponents = {
   "404": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "layout-404" */
-    "./404.e7b5c3f5.js"
+    "./404.513c380c.js"
   ), true ? [] : void 0)),
   "Layout": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "layout-Layout" */
-    "./Layout.6ccb98e6.js"
+    "./Layout.74c9aa3c.js"
   ), true ? [] : void 0))
 };
 const resolveHeadIdentifier = ([tag, attrs, content]) => {
@@ -8939,8 +8939,8 @@ const routeItems = [
   ["v-aa042210", "/git/common.html", { "title": "Git\u5E38\u7528\u547D\u4EE4" }, ["/git/common", "/git/common.md"]],
   ["v-46d404d8", "/git/development.html", { "title": "Git\u5F00\u53D1\u6D41\u7A0B\u5EFA\u8BAE" }, ["/git/development", "/git/development.md"]],
   ["v-8a42673c", "/linux/command.html", { "title": "Linux \u5E38\u7528\u547D\u4EE4" }, ["/linux/command", "/linux/command.md"]],
-  ["v-76bb3376", "/php/wechatTime.html", { "title": "\u65F6\u95F4\u5904\u7406" }, ["/php/wechatTime", "/php/wechatTime.md"]],
   ["v-6bfe5e5d", "/npm/configRegistry.html", { "title": "npm\u8BBE\u7F6E\u6DD8\u5B9D\u6E90" }, ["/npm/configRegistry", "/npm/configRegistry.md"]],
+  ["v-76bb3376", "/php/wechatTime.html", { "title": "\u65F6\u95F4\u5904\u7406" }, ["/php/wechatTime", "/php/wechatTime.md"]],
   ["v-f81671a0", "/yarn/install.html", { "title": "Yarn\u5B89\u88C5" }, ["/yarn/install", "/yarn/install.md"]],
   ["v-5a7523b2", "/php/thinkphp/cron.html", { "title": "TP5\u5B9A\u65F6\u4EFB\u52A1+\u5B9D\u5854\u8BA1\u5212\u4EFB\u52A1" }, ["/php/thinkphp/cron", "/php/thinkphp/cron.md"]],
   ["v-03093e3d", "/php/thinkphp/hook.html", { "title": "TP\u6846\u67B6\u884C\u4E3A\u94A9\u5B50\u4F7F\u7528\u65B9\u6CD5" }, ["/php/thinkphp/hook", "/php/thinkphp/hook.md"]],
