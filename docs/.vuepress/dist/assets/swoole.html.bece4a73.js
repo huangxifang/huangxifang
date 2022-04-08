@@ -2,7 +2,7 @@ const data = {
   "key": "v-57c453ba",
   "path": "/php/thinkphp/swoole.html",
   "title": "TP6\u5B89\u88C5think-swoole",
-  "lang": "zh-CN",
+  "lang": "en-US",
   "frontmatter": {},
   "excerpt": "",
   "headers": [

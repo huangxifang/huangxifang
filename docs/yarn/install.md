@@ -1,16 +1,18 @@
-# Yarn安装
+# Yarn常用命令
+
+## 安装
 
 ```bash
 npm install -g yarn
 ```
 
-查看版本：
+## 查看版本
 
 ```bash
 yarn --version
 ```
 
-## Yarn 淘宝源安装，分别复制粘贴以下代码行到黑窗口运行即可
+## 设置淘宝源
 
 ```bash
 yarn config set registry https://registry.npm.taobao.org -g

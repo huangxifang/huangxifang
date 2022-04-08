@@ -2,7 +2,7 @@ const data = {
   "key": "v-46d404d8",
   "path": "/git/development.html",
   "title": "Git\u5F00\u53D1\u6D41\u7A0B\u5EFA\u8BAE",
-  "lang": "zh-CN",
+  "lang": "en-US",
   "frontmatter": {},
   "excerpt": "",
   "headers": [

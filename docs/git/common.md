@@ -1,22 +1,61 @@
 # Git常用命令
 
-## 查看远程仓库地址
+## Git 全局设置
 
-```shell
-git remote -v
+```bash
+git config --global user.name "无风"
+git config --global user.email "2906568991@qq.com"
 ```
 
-## 切换远程仓库地址
+## 创建 git 仓库
 
-1. 切换远程仓库地址
+```bash
+mkdir an_dan_si_sure
+cd an_dan_si_sure
+git init
+touch README.md
+git add README.md
+git commit -m "first commit"
+git remote add origin https://gitee.com/wufengH/an_dan_si_sure.git
+git push -u origin master
+```
 
-   【git remote set-url origin URL】 更换远程仓库地址，URL为新地址。
+## 已有仓库?
 
-   ```shell
-   git remote set-url origin URL
-   ```
+```bash
+cd existing_git_repo
+git remote add origin https://gitee.com/wufengH/an_dan_si_sure.git
+git push -u origin master
+```
 
-2. 先删除远程仓库地址，然后再添加
+## 返回上一次commit 提交
 
-   【git remote rm origin】 删除现有远程仓库
-   【git remote add origin url】添加新远程仓库
+```bash
+git reset --hard HEAD
+```
+
+## 强制覆盖本地仓库
+
+```bash
+git reset --hard origin/master
+```
+
+## 切换仓库
+
+```bash
+git checkout 分支名
+```
+
+## 放弃本地修改
+
+- 1. 放弃所有修改
+
+```bash
+git checkout .
+```
+
+- 2. 放弃某个文件修改 (比如： git checkout -- readme.md  ，不要忘记中间的 “--” ，不写就成了检出分支了！！)
+  
+```bash
+git checkout -- filename
+```

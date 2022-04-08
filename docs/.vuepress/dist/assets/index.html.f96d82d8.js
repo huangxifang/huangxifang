@@ -2,8 +2,10 @@ const data = {
   "key": "v-8daa1a0e",
   "path": "/",
   "title": "\u6307\u5357",
-  "lang": "zh-CN",
-  "frontmatter": {},
+  "lang": "en-US",
+  "frontmatter": {
+    "home": true
+  },
   "excerpt": "",
   "headers": [
     {

@@ -1,8 +1,8 @@
 const data = {
-  "key": "v-6bfe5e5d",
-  "path": "/npm/configRegistry.html",
-  "title": "npm\u8BBE\u7F6E\u6DD8\u5B9D\u6E90",
-  "lang": "zh-CN",
+  "key": "v-03093e3d",
+  "path": "/php/thinkphp/hook.html",
+  "title": "TP\u6846\u67B6\u884C\u4E3A\u94A9\u5B50\u4F7F\u7528\u65B9\u6CD5",
+  "lang": "en-US",
   "frontmatter": {},
   "excerpt": "",
   "headers": [],
@@ -16,6 +16,6 @@ const data = {
       }
     ]
   },
-  "filePathRelative": "npm/configRegistry.md"
+  "filePathRelative": "php/thinkphp/hook.md"
 };
 export { data };

@@ -1,15 +1,27 @@
 const data = {
   "key": "v-f81671a0",
   "path": "/yarn/install.html",
-  "title": "Yarn\u5B89\u88C5",
-  "lang": "zh-CN",
+  "title": "Yarn\u5E38\u7528\u547D\u4EE4",
+  "lang": "en-US",
   "frontmatter": {},
   "excerpt": "",
   "headers": [
     {
       "level": 2,
-      "title": "Yarn \u6DD8\u5B9D\u6E90\u5B89\u88C5\uFF0C\u5206\u522B\u590D\u5236\u7C98\u8D34\u4EE5\u4E0B\u4EE3\u7801\u884C\u5230\u9ED1\u7A97\u53E3\u8FD0\u884C\u5373\u53EF",
-      "slug": "yarn-\u6DD8\u5B9D\u6E90\u5B89\u88C5-\u5206\u522B\u590D\u5236\u7C98\u8D34\u4EE5\u4E0B\u4EE3\u7801\u884C\u5230\u9ED1\u7A97\u53E3\u8FD0\u884C\u5373\u53EF",
+      "title": "\u5B89\u88C5",
+      "slug": "\u5B89\u88C5",
+      "children": []
+    },
+    {
+      "level": 2,
+      "title": "\u67E5\u770B\u7248\u672C",
+      "slug": "\u67E5\u770B\u7248\u672C",
+      "children": []
+    },
+    {
+      "level": 2,
+      "title": "\u8BBE\u7F6E\u6DD8\u5B9D\u6E90",
+      "slug": "\u8BBE\u7F6E\u6DD8\u5B9D\u6E90",
       "children": []
     }
   ],

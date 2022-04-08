@@ -1,3 +1,6 @@
+---
+home: true
+---
 # 指南
 
 ## Linux

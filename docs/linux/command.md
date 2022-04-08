@@ -4,7 +4,7 @@ title: Linux 常用命令
 description: Linux 常用命令
 ---
 
-# Linux 常用命令
+# Linux常用命令
 
 ## 查找目录
 

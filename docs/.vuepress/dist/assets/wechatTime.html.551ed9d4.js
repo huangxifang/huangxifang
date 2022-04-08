@@ -2,7 +2,7 @@ const data = {
   "key": "v-76bb3376",
   "path": "/php/wechatTime.html",
   "title": "\u65F6\u95F4\u5904\u7406",
-  "lang": "zh-CN",
+  "lang": "en-US",
   "frontmatter": {},
   "excerpt": "",
   "headers": [

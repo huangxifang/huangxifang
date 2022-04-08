@@ -71,11 +71,11 @@ const pagesComponents = {
   "v-46d404d8": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
     return development_html$2;
   })),
-  "v-6bfe5e5d": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return configRegistry_html$2;
-  })),
   "v-8a42673c": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
     return command_html$2;
+  })),
+  "v-6bfe5e5d": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
+    return configRegistry_html$2;
   })),
   "v-76bb3376": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
     return wechatTime_html$2;
@@ -109,11 +109,11 @@ const pagesData$1 = {
   "v-46d404d8": () => Promise.resolve().then(function() {
     return development_html;
   }).then(({ data: data2 }) => data2),
-  "v-6bfe5e5d": () => Promise.resolve().then(function() {
-    return configRegistry_html;
-  }).then(({ data: data2 }) => data2),
   "v-8a42673c": () => Promise.resolve().then(function() {
     return command_html;
+  }).then(({ data: data2 }) => data2),
+  "v-6bfe5e5d": () => Promise.resolve().then(function() {
+    return configRegistry_html;
   }).then(({ data: data2 }) => data2),
   "v-76bb3376": () => Promise.resolve().then(function() {
     return wechatTime_html;
@@ -189,10 +189,18 @@ const useRouteLocale = () => {
 };
 const siteData$1 = {
   "base": "/huangxifang/",
-  "lang": "zh-CN",
+  "lang": "en-US",
   "title": "\u9EC4\u897F\u65B9\u4E2A\u4EBA\u535A\u5BA2",
   "description": "\u4E2A\u4EBA\u535A\u5BA2\uFF0C\u8BB0\u5F55\u5DE5\u4F5C\u5185\u5BB9\u70B9\u6EF4",
-  "head": [],
+  "head": [
+    [
+      "link",
+      {
+        "rel": "icon",
+        "href": "/images/logo.png"
+      }
+    ]
+  ],
   "locales": {}
 };
 const siteData = vue.ref(siteData$1);
@@ -397,15 +405,73 @@ var clientAppEnhance1 = defineClientAppEnhance(({ app, router }) => {
   return;
 });
 const themeData$1 = {
-  "logo": "https://vuejs.org/images/logo.png",
+  "logo": "https://v2.vuepress.vuejs.org/images/hero.png",
+  "navbar": [
+    {
+      "text": "PHP",
+      "children": [
+        {
+          "text": "\u65F6\u95F4\u5904\u7406",
+          "link": "/php/wechatTime.md"
+        },
+        {
+          "text": "ThinkPHP",
+          "children": [
+            {
+              "text": "TP5\u5B9A\u65F6\u4EFB\u52A1",
+              "link": "/php/thinkphp/cron.md"
+            },
+            {
+              "text": "TP6\u5B89\u88C5think-swoole",
+              "link": "/php/thinkphp/swoole.md"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "Linux",
+      "children": [
+        {
+          "text": "Linux\u5E38\u7528\u547D\u4EE4",
+          "link": "/linux/command.md"
+        }
+      ]
+    },
+    {
+      "text": "NPM",
+      "children": [
+        {
+          "text": "npm\u8BBE\u7F6E\u6DD8\u5B9D\u955C\u50CF",
+          "link": "/npm/configRegistry.md"
+        },
+        {
+          "text": "Yarn\u5B89\u88C5",
+          "link": "/yarn/install.md"
+        }
+      ]
+    },
+    {
+      "text": "Git",
+      "children": [
+        {
+          "text": "Git\u5E38\u7528\u547D\u4EE4",
+          "link": "/git/common.md"
+        },
+        {
+          "text": "Git\u5F00\u53D1\u6D41\u7A0B\u5EFA\u8BAE",
+          "link": "/git/development.md"
+        }
+      ]
+    }
+  ],
+  "repo": "https://huangxifang.github.io",
   "locales": {
     "/": {
       "selectLanguageName": "English"
     }
   },
-  "navbar": [],
   "darkMode": true,
-  "repo": null,
   "selectLanguageText": "Languages",
   "selectLanguageAriaLabel": "Select language",
   "sidebar": "auto",
@@ -916,10 +982,10 @@ const routeItems = [
   ["v-224c7cf6", "/css/easyToIgnore.html", { "title": "49\u4E2A\u5728\u5DE5\u4F5C\u4E2D\u5E38\u7528\u4E14\u5BB9\u6613\u9057\u5FD8\u7684CSS\u6837\u5F0F\u6E05\u5355\u6574\u7406" }, ["/css/easyToIgnore", "/css/easyToIgnore.md"]],
   ["v-aa042210", "/git/common.html", { "title": "Git\u5E38\u7528\u547D\u4EE4" }, ["/git/common", "/git/common.md"]],
   ["v-46d404d8", "/git/development.html", { "title": "Git\u5F00\u53D1\u6D41\u7A0B\u5EFA\u8BAE" }, ["/git/development", "/git/development.md"]],
-  ["v-6bfe5e5d", "/npm/configRegistry.html", { "title": "npm\u8BBE\u7F6E\u6DD8\u5B9D\u6E90" }, ["/npm/configRegistry", "/npm/configRegistry.md"]],
   ["v-8a42673c", "/linux/command.html", { "title": "Linux \u5E38\u7528\u547D\u4EE4" }, ["/linux/command", "/linux/command.md"]],
+  ["v-6bfe5e5d", "/npm/configRegistry.html", { "title": "npm\u8BBE\u7F6E\u6DD8\u5B9D\u6E90" }, ["/npm/configRegistry", "/npm/configRegistry.md"]],
   ["v-76bb3376", "/php/wechatTime.html", { "title": "\u65F6\u95F4\u5904\u7406" }, ["/php/wechatTime", "/php/wechatTime.md"]],
-  ["v-f81671a0", "/yarn/install.html", { "title": "Yarn\u5B89\u88C5" }, ["/yarn/install", "/yarn/install.md"]],
+  ["v-f81671a0", "/yarn/install.html", { "title": "Yarn\u5E38\u7528\u547D\u4EE4" }, ["/yarn/install", "/yarn/install.md"]],
   ["v-5a7523b2", "/php/thinkphp/cron.html", { "title": "TP5\u5B9A\u65F6\u4EFB\u52A1+\u5B9D\u5854\u8BA1\u5212\u4EFB\u52A1" }, ["/php/thinkphp/cron", "/php/thinkphp/cron.md"]],
   ["v-03093e3d", "/php/thinkphp/hook.html", { "title": "TP\u6846\u67B6\u884C\u4E3A\u94A9\u5B50\u4F7F\u7528\u65B9\u6CD5" }, ["/php/thinkphp/hook", "/php/thinkphp/hook.md"]],
   ["v-57c453ba", "/php/thinkphp/swoole.html", { "title": "TP6\u5B89\u88C5think-swoole" }, ["/php/thinkphp/swoole", "/php/thinkphp/swoole.md"]],
@@ -1681,9 +1747,25 @@ var easyToIgnore_html$2 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.d
 }, Symbol.toStringTag, { value: "Module" }));
 const _sfc_main$u = {};
 function _sfc_ssrRender$a(_ctx, _push, _parent, _attrs) {
-  _push(`<!--[--><h1 id="git\u5E38\u7528\u547D\u4EE4" tabindex="-1"><a class="header-anchor" href="#git\u5E38\u7528\u547D\u4EE4" aria-hidden="true">#</a> Git\u5E38\u7528\u547D\u4EE4</h1><h2 id="\u67E5\u770B\u8FDC\u7A0B\u4ED3\u5E93\u5730\u5740" tabindex="-1"><a class="header-anchor" href="#\u67E5\u770B\u8FDC\u7A0B\u4ED3\u5E93\u5730\u5740" aria-hidden="true">#</a> \u67E5\u770B\u8FDC\u7A0B\u4ED3\u5E93\u5730\u5740</h2><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code><span class="token function">git</span> remote -v
-</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br></div></div><h2 id="\u5207\u6362\u8FDC\u7A0B\u4ED3\u5E93\u5730\u5740" tabindex="-1"><a class="header-anchor" href="#\u5207\u6362\u8FDC\u7A0B\u4ED3\u5E93\u5730\u5740" aria-hidden="true">#</a> \u5207\u6362\u8FDC\u7A0B\u4ED3\u5E93\u5730\u5740</h2><ol><li><p>\u5207\u6362\u8FDC\u7A0B\u4ED3\u5E93\u5730\u5740</p><p>\u3010git remote set-url origin URL\u3011 \u66F4\u6362\u8FDC\u7A0B\u4ED3\u5E93\u5730\u5740\uFF0CURL\u4E3A\u65B0\u5730\u5740\u3002</p><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code><span class="token function">git</span> remote set-url origin URL
-</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br></div></div></li><li><p>\u5148\u5220\u9664\u8FDC\u7A0B\u4ED3\u5E93\u5730\u5740\uFF0C\u7136\u540E\u518D\u6DFB\u52A0</p><p>\u3010git remote rm origin\u3011 \u5220\u9664\u73B0\u6709\u8FDC\u7A0B\u4ED3\u5E93 \u3010git remote add origin url\u3011\u6DFB\u52A0\u65B0\u8FDC\u7A0B\u4ED3\u5E93</p></li></ol><!--]-->`);
+  _push(`<!--[--><h1 id="git\u5E38\u7528\u547D\u4EE4" tabindex="-1"><a class="header-anchor" href="#git\u5E38\u7528\u547D\u4EE4" aria-hidden="true">#</a> Git\u5E38\u7528\u547D\u4EE4</h1><h2 id="git-\u5168\u5C40\u8BBE\u7F6E" tabindex="-1"><a class="header-anchor" href="#git-\u5168\u5C40\u8BBE\u7F6E" aria-hidden="true">#</a> Git \u5168\u5C40\u8BBE\u7F6E</h2><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code><span class="token function">git</span> config --global user.name <span class="token string">&quot;\u65E0\u98CE&quot;</span>
+<span class="token function">git</span> config --global user.email <span class="token string">&quot;2906568991@qq.com&quot;</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h2 id="\u521B\u5EFA-git-\u4ED3\u5E93" tabindex="-1"><a class="header-anchor" href="#\u521B\u5EFA-git-\u4ED3\u5E93" aria-hidden="true">#</a> \u521B\u5EFA git \u4ED3\u5E93</h2><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code><span class="token function">mkdir</span> an_dan_si_sure
+<span class="token builtin class-name">cd</span> an_dan_si_sure
+<span class="token function">git</span> init
+<span class="token function">touch</span> README.md
+<span class="token function">git</span> <span class="token function">add</span> README.md
+<span class="token function">git</span> commit -m <span class="token string">&quot;first commit&quot;</span>
+<span class="token function">git</span> remote <span class="token function">add</span> origin https://gitee.com/wufengH/an_dan_si_sure.git
+<span class="token function">git</span> push -u origin master
+</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h2 id="\u5DF2\u6709\u4ED3\u5E93" tabindex="-1"><a class="header-anchor" href="#\u5DF2\u6709\u4ED3\u5E93" aria-hidden="true">#</a> \u5DF2\u6709\u4ED3\u5E93?</h2><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code><span class="token builtin class-name">cd</span> existing_git_repo
+<span class="token function">git</span> remote <span class="token function">add</span> origin https://gitee.com/wufengH/an_dan_si_sure.git
+<span class="token function">git</span> push -u origin master
+</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h2 id="\u8FD4\u56DE\u4E0A\u4E00\u6B21commit-\u63D0\u4EA4" tabindex="-1"><a class="header-anchor" href="#\u8FD4\u56DE\u4E0A\u4E00\u6B21commit-\u63D0\u4EA4" aria-hidden="true">#</a> \u8FD4\u56DE\u4E0A\u4E00\u6B21commit \u63D0\u4EA4</h2><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code><span class="token function">git</span> reset --hard HEAD
+</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br></div></div><h2 id="\u5F3A\u5236\u8986\u76D6\u672C\u5730\u4ED3\u5E93" tabindex="-1"><a class="header-anchor" href="#\u5F3A\u5236\u8986\u76D6\u672C\u5730\u4ED3\u5E93" aria-hidden="true">#</a> \u5F3A\u5236\u8986\u76D6\u672C\u5730\u4ED3\u5E93</h2><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code><span class="token function">git</span> reset --hard origin/master
+</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br></div></div><h2 id="\u5207\u6362\u4ED3\u5E93" tabindex="-1"><a class="header-anchor" href="#\u5207\u6362\u4ED3\u5E93" aria-hidden="true">#</a> \u5207\u6362\u4ED3\u5E93</h2><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code><span class="token function">git</span> checkout \u5206\u652F\u540D
+</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br></div></div><h2 id="\u653E\u5F03\u672C\u5730\u4FEE\u6539" tabindex="-1"><a class="header-anchor" href="#\u653E\u5F03\u672C\u5730\u4FEE\u6539" aria-hidden="true">#</a> \u653E\u5F03\u672C\u5730\u4FEE\u6539</h2><ul><li><ol><li>\u653E\u5F03\u6240\u6709\u4FEE\u6539</li></ol></li></ul><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code><span class="token function">git</span> checkout <span class="token builtin class-name">.</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br></div></div><ul><li><ol start="2"><li>\u653E\u5F03\u67D0\u4E2A\u6587\u4EF6\u4FEE\u6539 (\u6BD4\u5982\uFF1A git checkout -- readme.md \uFF0C\u4E0D\u8981\u5FD8\u8BB0\u4E2D\u95F4\u7684 \u201C--\u201D \uFF0C\u4E0D\u5199\u5C31\u6210\u4E86\u68C0\u51FA\u5206\u652F\u4E86\uFF01\uFF01)</li></ol></li></ul><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code><span class="token function">git</span> checkout -- filename
+</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br></div></div><!--]-->`);
 }
 const _sfc_setup$u = _sfc_main$u.setup;
 _sfc_main$u.setup = (props, ctx) => {
@@ -1716,24 +1798,7 @@ var development_html$2 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.de
 }, Symbol.toStringTag, { value: "Module" }));
 const _sfc_main$s = {};
 function _sfc_ssrRender$8(_ctx, _push, _parent, _attrs) {
-  _push(`<!--[--><h1 id="npm\u8BBE\u7F6E\u6DD8\u5B9D\u6E90" tabindex="-1"><a class="header-anchor" href="#npm\u8BBE\u7F6E\u6DD8\u5B9D\u6E90" aria-hidden="true">#</a> npm\u8BBE\u7F6E\u6DD8\u5B9D\u6E90</h1><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code><span class="token function">npm</span> config <span class="token builtin class-name">set</span> registry http://registry.npm.taobao.org/
-</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br></div></div><p>\u8FD8\u539F</p><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code><span class="token function">npm</span> config <span class="token builtin class-name">set</span> registry https://registry.npmjs.org/
-</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br></div></div><!--]-->`);
-}
-const _sfc_setup$s = _sfc_main$s.setup;
-_sfc_main$s.setup = (props, ctx) => {
-  const ssrContext = vue.useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../pages/npm/configRegistry.html.vue");
-  return _sfc_setup$s ? _sfc_setup$s(props, ctx) : void 0;
-};
-var configRegistry_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$s, [["ssrRender", _sfc_ssrRender$8], ["__file", "configRegistry.html.vue"]]);
-var configRegistry_html$2 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
-  __proto__: null,
-  "default": configRegistry_html$1
-}, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$r = {};
-function _sfc_ssrRender$7(_ctx, _push, _parent, _attrs) {
-  _push(`<!--[--><h1 id="linux-\u5E38\u7528\u547D\u4EE4" tabindex="-1"><a class="header-anchor" href="#linux-\u5E38\u7528\u547D\u4EE4" aria-hidden="true">#</a> Linux \u5E38\u7528\u547D\u4EE4</h1><h2 id="\u67E5\u627E\u76EE\u5F55" tabindex="-1"><a class="header-anchor" href="#\u67E5\u627E\u76EE\u5F55" aria-hidden="true">#</a> \u67E5\u627E\u76EE\u5F55</h2><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code><span class="token function">find</span> / -name <span class="token string">&#39;\u67E5\u627E\u5173\u952E\u5B57&#39;</span> -type d
+  _push(`<!--[--><h1 id="linux\u5E38\u7528\u547D\u4EE4" tabindex="-1"><a class="header-anchor" href="#linux\u5E38\u7528\u547D\u4EE4" aria-hidden="true">#</a> Linux\u5E38\u7528\u547D\u4EE4</h1><h2 id="\u67E5\u627E\u76EE\u5F55" tabindex="-1"><a class="header-anchor" href="#\u67E5\u627E\u76EE\u5F55" aria-hidden="true">#</a> \u67E5\u627E\u76EE\u5F55</h2><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code><span class="token function">find</span> / -name <span class="token string">&#39;\u67E5\u627E\u5173\u952E\u5B57&#39;</span> -type d
 </code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br></div></div><p><strong>tips:</strong> <code>/</code> \u4E3A\u67E5\u627E\u8303\u56F4</p><h2 id="\u67E5\u627E\u6587\u4EF6" tabindex="-1"><a class="header-anchor" href="#\u67E5\u627E\u6587\u4EF6" aria-hidden="true">#</a> \u67E5\u627E\u6587\u4EF6</h2><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code><span class="token function">find</span> / -name <span class="token string">&#39;\u67E5\u627E\u5173\u952E\u5B57&#39;</span> -print
 </code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br></div></div><h2 id="\u89E3\u538B\u538B\u7F29\u5305" tabindex="-1"><a class="header-anchor" href="#\u89E3\u538B\u538B\u7F29\u5305" aria-hidden="true">#</a> \u89E3\u538B\u538B\u7F29\u5305</h2><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code><span class="token function">tar</span> -zxvf \u538B\u7F29\u5305\u540D\u79F0
 </code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br></div></div><h2 id="\u4E00\u3001\u6587\u4EF6\u548C\u76EE\u5F55" tabindex="-1"><a class="header-anchor" href="#\u4E00\u3001\u6587\u4EF6\u548C\u76EE\u5F55" aria-hidden="true">#</a> <strong>\u4E00\u3001\u6587\u4EF6\u548C\u76EE\u5F55</strong></h2><h3 id="_1-cd\u547D\u4EE4" tabindex="-1"><a class="header-anchor" href="#_1-cd\u547D\u4EE4" aria-hidden="true">#</a> <strong>1. cd\u547D\u4EE4</strong></h3><p>\u5B83\u7528\u4E8E\u5207\u6362\u5F53\u524D\u76EE\u5F55\uFF0C\u5B83\u7684\u53C2\u6570\u662F\u8981\u5207\u6362\u5230\u7684\u76EE\u5F55\u7684\u8DEF\u5F84\uFF0C\u53EF\u4EE5\u662F\u7EDD\u5BF9\u8DEF\u5F84\uFF0C\u4E5F\u53EF\u4EE5\u662F\u76F8\u5BF9\u8DEF\u5F84\uFF1A</p><ul><li>cd /home \u8FDB\u5165 &#39;/ home&#39; \u76EE\u5F55</li><li>cd .. \u8FD4\u56DE\u4E0A\u4E00\u7EA7\u76EE\u5F55</li><li>cd ../.. \u8FD4\u56DE\u4E0A\u4E24\u7EA7\u76EE\u5F55</li><li>cd \u8FDB\u5165\u4E2A\u4EBA\u7684\u4E3B\u76EE\u5F55</li><li>cd ~user1 \u8FDB\u5165\u4E2A\u4EBA\u7684\u4E3B\u76EE\u5F55</li><li>cd - \u8FD4\u56DE\u4E0A\u6B21\u6240\u5728\u7684\u76EE\u5F55</li></ul><h3 id="_2-pwd\u547D\u4EE4" tabindex="-1"><a class="header-anchor" href="#_2-pwd\u547D\u4EE4" aria-hidden="true">#</a> <strong>2. pwd\u547D\u4EE4</strong></h3><p>pwd \u663E\u793A\u5DE5\u4F5C\u8DEF\u5F84</p><h3 id="_3-ls\u547D\u4EE4" tabindex="-1"><a class="header-anchor" href="#_3-ls\u547D\u4EE4" aria-hidden="true">#</a> <strong>3. ls\u547D\u4EE4</strong></h3><p>\u67E5\u770B\u6587\u4EF6\u4E0E\u76EE\u5F55\u7684\u547D\u4EE4\uFF0Clist\u4E4B\u610F\uFF1A</p><ul><li>ls \u67E5\u770B\u76EE\u5F55\u4E2D\u7684\u6587\u4EF6</li><li>ls -l \u663E\u793A\u6587\u4EF6\u548C\u76EE\u5F55\u7684\u8BE6\u7EC6\u8D44\u6599</li><li>ls -a \u5217\u51FA\u5168\u90E8\u6587\u4EF6\uFF0C\u5305\u542B\u9690\u85CF\u6587\u4EF6</li><li>ls -R \u8FDE\u540C\u5B50\u76EE\u5F55\u7684\u5185\u5BB9\u4E00\u8D77\u5217\u51FA\uFF08\u9012\u5F52\u5217\u51FA\uFF09\uFF0C\u7B49\u4E8E\u8BE5\u76EE\u5F55\u4E0B\u7684\u6240\u6709\u6587\u4EF6\u90FD\u4F1A\u663E\u793A\u51FA\u6765</li><li>ls [0-9] \u663E\u793A\u5305\u542B\u6570\u5B57\u7684\u6587\u4EF6\u540D\u548C\u76EE\u5F55\u540D</li></ul><h3 id="_4-cp-\u547D\u4EE4" tabindex="-1"><a class="header-anchor" href="#_4-cp-\u547D\u4EE4" aria-hidden="true">#</a> <strong>4. cp \u547D\u4EE4</strong></h3><p>\u7528\u4E8E\u590D\u5236\u6587\u4EF6\uFF0Ccopy\u4E4B\u610F\uFF0C\u5B83\u8FD8\u53EF\u4EE5\u628A\u591A\u4E2A\u6587\u4EF6\u4E00\u6B21\u6027\u5730\u590D\u5236\u5230\u4E00\u4E2A\u76EE\u5F55\u4E0B\uFF1A</p><ul><li>-a \uFF1A\u5C06\u6587\u4EF6\u7684\u7279\u6027\u4E00\u8D77\u590D\u5236</li><li>-p \uFF1A\u8FDE\u540C\u6587\u4EF6\u7684\u5C5E\u6027\u4E00\u8D77\u590D\u5236\uFF0C\u800C\u975E\u4F7F\u7528\u9ED8\u8BA4\u65B9\u5F0F\uFF0C\u4E0E-a\u76F8\u4F3C\uFF0C\u5E38\u7528\u4E8E\u5907\u4EFD</li><li>-i \uFF1A\u82E5\u76EE\u6807\u6587\u4EF6\u5DF2\u7ECF\u5B58\u5728\u65F6\uFF0C\u5728\u8986\u76D6\u65F6\u4F1A\u5148\u8BE2\u95EE\u64CD\u4F5C\u7684\u8FDB\u884C</li><li>-r \uFF1A\u9012\u5F52\u6301\u7EED\u590D\u5236\uFF0C\u7528\u4E8E\u76EE\u5F55\u7684\u590D\u5236\u884C\u4E3A</li><li>-u \uFF1A\u76EE\u6807\u6587\u4EF6\u4E0E\u6E90\u6587\u4EF6\u6709\u5DEE\u5F02\u65F6\u624D\u4F1A\u590D\u5236</li></ul><p><strong>eg.</strong></p><h4 id="\u590D\u5236\u6587\u4EF6\u5230\u6307\u5B9A\u76EE\u5F55" tabindex="-1"><a class="header-anchor" href="#\u590D\u5236\u6587\u4EF6\u5230\u6307\u5B9A\u76EE\u5F55" aria-hidden="true">#</a> \u590D\u5236\u6587\u4EF6\u5230\u6307\u5B9A\u76EE\u5F55</h4><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code><span class="token function">cp</span> filename /www/wwwroot
@@ -1748,16 +1813,33 @@ function _sfc_ssrRender$7(_ctx, _push, _parent, _attrs) {
 </code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h3 id="_19-kill\u547D\u4EE4" tabindex="-1"><a class="header-anchor" href="#_19-kill\u547D\u4EE4" aria-hidden="true">#</a> <strong>19. kill\u547D\u4EE4</strong></h3><p>\u7528\u4E8E\u5411\u67D0\u4E2A\u5DE5\u4F5C\uFF08%jobnumber\uFF09\u6216\u8005\u662F\u67D0\u4E2APID\uFF08\u6570\u5B57\uFF09\u4F20\u9001\u4E00\u4E2A\u4FE1\u53F7\uFF0C\u5B83\u901A\u5E38\u4E0Eps\u548Cjobs\u547D\u4EE4\u4E00\u8D77\u4F7F\u7528\uFF1A</p><h3 id="_20-killall\u547D\u4EE4" tabindex="-1"><a class="header-anchor" href="#_20-killall\u547D\u4EE4" aria-hidden="true">#</a> <strong>20. killall\u547D\u4EE4</strong></h3><p>\uFF08\u5411\u4E00\u4E2A\u547D\u4EE4\u542F\u52A8\u7684\u8FDB\u7A0B\u53D1\u9001\u4E00\u4E2A\u4FE1\u53F7\uFF09</p><h3 id="_21-top\u547D\u4EE4" tabindex="-1"><a class="header-anchor" href="#_21-top\u547D\u4EE4" aria-hidden="true">#</a> <strong>21. top\u547D\u4EE4</strong></h3><p>\u662FLinux\u4E0B\u5E38\u7528\u7684\u6027\u80FD\u5206\u6790\u5DE5\u5177\uFF0C\u80FD\u591F\u5B9E\u65F6\u663E\u793A\u7CFB\u7EDF\u4E2D\u5404\u4E2A\u8FDB\u7A0B\u7684\u8D44\u6E90\u5360\u7528\u72B6\u51B5\uFF0C\u7C7B\u4F3C\u4E8EWindows\u7684\u4EFB\u52A1\u7BA1\u7406\u5668\u3002</p><p>\u5982\u4F55\u6740\u6B7B\u8FDB\u7A0B\uFF1A</p><ul><li>\u56FE\u5F62\u5316\u754C\u9762\u7684\u65B9\u5F0F</li><li>kill -9 pid \uFF08-9\u8868\u793A\u5F3A\u5236\u5173\u95ED\uFF09</li><li>killall -9 \u7A0B\u5E8F\u7684\u540D\u5B57</li><li>pkill \u7A0B\u5E8F\u7684\u540D\u5B57</li></ul><p>\u67E5\u770B\u8FDB\u7A0B\u7AEF\u53E3\u53F7\uFF1A</p><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code><span class="token function">netstat</span> -tunlp<span class="token operator">|</span><span class="token function">grep</span> \u7AEF\u53E3\u53F7
 </code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br></div></div><!--]-->`);
 }
-const _sfc_setup$r = _sfc_main$r.setup;
-_sfc_main$r.setup = (props, ctx) => {
+const _sfc_setup$s = _sfc_main$s.setup;
+_sfc_main$s.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../pages/linux/command.html.vue");
-  return _sfc_setup$r ? _sfc_setup$r(props, ctx) : void 0;
+  return _sfc_setup$s ? _sfc_setup$s(props, ctx) : void 0;
 };
-var command_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$r, [["ssrRender", _sfc_ssrRender$7], ["__file", "command.html.vue"]]);
+var command_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$s, [["ssrRender", _sfc_ssrRender$8], ["__file", "command.html.vue"]]);
 var command_html$2 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": command_html$1
+}, Symbol.toStringTag, { value: "Module" }));
+const _sfc_main$r = {};
+function _sfc_ssrRender$7(_ctx, _push, _parent, _attrs) {
+  _push(`<!--[--><h1 id="npm\u8BBE\u7F6E\u6DD8\u5B9D\u6E90" tabindex="-1"><a class="header-anchor" href="#npm\u8BBE\u7F6E\u6DD8\u5B9D\u6E90" aria-hidden="true">#</a> npm\u8BBE\u7F6E\u6DD8\u5B9D\u6E90</h1><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code><span class="token function">npm</span> config <span class="token builtin class-name">set</span> registry http://registry.npm.taobao.org/
+</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br></div></div><p>\u8FD8\u539F</p><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code><span class="token function">npm</span> config <span class="token builtin class-name">set</span> registry https://registry.npmjs.org/
+</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br></div></div><!--]-->`);
+}
+const _sfc_setup$r = _sfc_main$r.setup;
+_sfc_main$r.setup = (props, ctx) => {
+  const ssrContext = vue.useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../pages/npm/configRegistry.html.vue");
+  return _sfc_setup$r ? _sfc_setup$r(props, ctx) : void 0;
+};
+var configRegistry_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$r, [["ssrRender", _sfc_ssrRender$7], ["__file", "configRegistry.html.vue"]]);
+var configRegistry_html$2 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": configRegistry_html$1
 }, Symbol.toStringTag, { value: "Module" }));
 const _sfc_main$q = {};
 function _sfc_ssrRender$6(_ctx, _push, _parent, _attrs) {
@@ -1862,9 +1944,9 @@ var wechatTime_html$2 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.def
 }, Symbol.toStringTag, { value: "Module" }));
 const _sfc_main$p = {};
 function _sfc_ssrRender$5(_ctx, _push, _parent, _attrs) {
-  _push(`<!--[--><h1 id="yarn\u5B89\u88C5" tabindex="-1"><a class="header-anchor" href="#yarn\u5B89\u88C5" aria-hidden="true">#</a> Yarn\u5B89\u88C5</h1><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code><span class="token function">npm</span> <span class="token function">install</span> -g <span class="token function">yarn</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br></div></div><p>\u67E5\u770B\u7248\u672C\uFF1A</p><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code><span class="token function">yarn</span> --version
-</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br></div></div><h2 id="yarn-\u6DD8\u5B9D\u6E90\u5B89\u88C5-\u5206\u522B\u590D\u5236\u7C98\u8D34\u4EE5\u4E0B\u4EE3\u7801\u884C\u5230\u9ED1\u7A97\u53E3\u8FD0\u884C\u5373\u53EF" tabindex="-1"><a class="header-anchor" href="#yarn-\u6DD8\u5B9D\u6E90\u5B89\u88C5-\u5206\u522B\u590D\u5236\u7C98\u8D34\u4EE5\u4E0B\u4EE3\u7801\u884C\u5230\u9ED1\u7A97\u53E3\u8FD0\u884C\u5373\u53EF" aria-hidden="true">#</a> Yarn \u6DD8\u5B9D\u6E90\u5B89\u88C5\uFF0C\u5206\u522B\u590D\u5236\u7C98\u8D34\u4EE5\u4E0B\u4EE3\u7801\u884C\u5230\u9ED1\u7A97\u53E3\u8FD0\u884C\u5373\u53EF</h2><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code><span class="token function">yarn</span> config <span class="token builtin class-name">set</span> registry https://registry.npm.taobao.org -g
+  _push(`<!--[--><h1 id="yarn\u5E38\u7528\u547D\u4EE4" tabindex="-1"><a class="header-anchor" href="#yarn\u5E38\u7528\u547D\u4EE4" aria-hidden="true">#</a> Yarn\u5E38\u7528\u547D\u4EE4</h1><h2 id="\u5B89\u88C5" tabindex="-1"><a class="header-anchor" href="#\u5B89\u88C5" aria-hidden="true">#</a> \u5B89\u88C5</h2><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code><span class="token function">npm</span> <span class="token function">install</span> -g <span class="token function">yarn</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br></div></div><h2 id="\u67E5\u770B\u7248\u672C" tabindex="-1"><a class="header-anchor" href="#\u67E5\u770B\u7248\u672C" aria-hidden="true">#</a> \u67E5\u770B\u7248\u672C</h2><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code><span class="token function">yarn</span> --version
+</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br></div></div><h2 id="\u8BBE\u7F6E\u6DD8\u5B9D\u6E90" tabindex="-1"><a class="header-anchor" href="#\u8BBE\u7F6E\u6DD8\u5B9D\u6E90" aria-hidden="true">#</a> \u8BBE\u7F6E\u6DD8\u5B9D\u6E90</h2><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code><span class="token function">yarn</span> config <span class="token builtin class-name">set</span> registry https://registry.npm.taobao.org -g
 <span class="token function">yarn</span> config <span class="token builtin class-name">set</span> sass_binary_site http://cdn.npm.taobao.org/dist/node-sass -g
 
 </code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><!--]-->`);
@@ -1973,8 +2055,10 @@ const data$b = {
   "key": "v-8daa1a0e",
   "path": "/",
   "title": "\u6307\u5357",
-  "lang": "zh-CN",
-  "frontmatter": {},
+  "lang": "en-US",
+  "frontmatter": {
+    "home": true
+  },
   "excerpt": "",
   "headers": [
     {
@@ -2088,7 +2172,7 @@ const data$a = {
   "key": "v-224c7cf6",
   "path": "/css/easyToIgnore.html",
   "title": "49\u4E2A\u5728\u5DE5\u4F5C\u4E2D\u5E38\u7528\u4E14\u5BB9\u6613\u9057\u5FD8\u7684CSS\u6837\u5F0F\u6E05\u5355\u6574\u7406",
-  "lang": "zh-CN",
+  "lang": "en-US",
   "frontmatter": {},
   "excerpt": "",
   "headers": [
@@ -2407,20 +2491,50 @@ const data$9 = {
   "key": "v-aa042210",
   "path": "/git/common.html",
   "title": "Git\u5E38\u7528\u547D\u4EE4",
-  "lang": "zh-CN",
+  "lang": "en-US",
   "frontmatter": {},
   "excerpt": "",
   "headers": [
     {
       "level": 2,
-      "title": "\u67E5\u770B\u8FDC\u7A0B\u4ED3\u5E93\u5730\u5740",
-      "slug": "\u67E5\u770B\u8FDC\u7A0B\u4ED3\u5E93\u5730\u5740",
+      "title": "Git \u5168\u5C40\u8BBE\u7F6E",
+      "slug": "git-\u5168\u5C40\u8BBE\u7F6E",
       "children": []
     },
     {
       "level": 2,
-      "title": "\u5207\u6362\u8FDC\u7A0B\u4ED3\u5E93\u5730\u5740",
-      "slug": "\u5207\u6362\u8FDC\u7A0B\u4ED3\u5E93\u5730\u5740",
+      "title": "\u521B\u5EFA git \u4ED3\u5E93",
+      "slug": "\u521B\u5EFA-git-\u4ED3\u5E93",
+      "children": []
+    },
+    {
+      "level": 2,
+      "title": "\u5DF2\u6709\u4ED3\u5E93?",
+      "slug": "\u5DF2\u6709\u4ED3\u5E93",
+      "children": []
+    },
+    {
+      "level": 2,
+      "title": "\u8FD4\u56DE\u4E0A\u4E00\u6B21commit \u63D0\u4EA4",
+      "slug": "\u8FD4\u56DE\u4E0A\u4E00\u6B21commit-\u63D0\u4EA4",
+      "children": []
+    },
+    {
+      "level": 2,
+      "title": "\u5F3A\u5236\u8986\u76D6\u672C\u5730\u4ED3\u5E93",
+      "slug": "\u5F3A\u5236\u8986\u76D6\u672C\u5730\u4ED3\u5E93",
+      "children": []
+    },
+    {
+      "level": 2,
+      "title": "\u5207\u6362\u4ED3\u5E93",
+      "slug": "\u5207\u6362\u4ED3\u5E93",
+      "children": []
+    },
+    {
+      "level": 2,
+      "title": "\u653E\u5F03\u672C\u5730\u4FEE\u6539",
+      "slug": "\u653E\u5F03\u672C\u5730\u4FEE\u6539",
       "children": []
     }
   ],
@@ -2444,7 +2558,7 @@ const data$8 = {
   "key": "v-46d404d8",
   "path": "/git/development.html",
   "title": "Git\u5F00\u53D1\u6D41\u7A0B\u5EFA\u8BAE",
-  "lang": "zh-CN",
+  "lang": "en-US",
   "frontmatter": {},
   "excerpt": "",
   "headers": [
@@ -2484,30 +2598,6 @@ var development_html = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defi
   data: data$8
 }, Symbol.toStringTag, { value: "Module" }));
 const data$7 = {
-  "key": "v-6bfe5e5d",
-  "path": "/npm/configRegistry.html",
-  "title": "npm\u8BBE\u7F6E\u6DD8\u5B9D\u6E90",
-  "lang": "zh-CN",
-  "frontmatter": {},
-  "excerpt": "",
-  "headers": [],
-  "git": {
-    "updatedTime": 1649323648e3,
-    "contributors": [
-      {
-        "name": "huangxifang",
-        "email": "2906568991@qq.com",
-        "commits": 1
-      }
-    ]
-  },
-  "filePathRelative": "npm/configRegistry.md"
-};
-var configRegistry_html = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
-  __proto__: null,
-  data: data$7
-}, Symbol.toStringTag, { value: "Module" }));
-const data$6 = {
   "key": "v-8a42673c",
   "path": "/linux/command.html",
   "title": "Linux \u5E38\u7528\u547D\u4EE4",
@@ -2727,13 +2817,37 @@ const data$6 = {
 };
 var command_html = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
+  data: data$7
+}, Symbol.toStringTag, { value: "Module" }));
+const data$6 = {
+  "key": "v-6bfe5e5d",
+  "path": "/npm/configRegistry.html",
+  "title": "npm\u8BBE\u7F6E\u6DD8\u5B9D\u6E90",
+  "lang": "en-US",
+  "frontmatter": {},
+  "excerpt": "",
+  "headers": [],
+  "git": {
+    "updatedTime": 1649323648e3,
+    "contributors": [
+      {
+        "name": "huangxifang",
+        "email": "2906568991@qq.com",
+        "commits": 1
+      }
+    ]
+  },
+  "filePathRelative": "npm/configRegistry.md"
+};
+var configRegistry_html = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
   data: data$6
 }, Symbol.toStringTag, { value: "Module" }));
 const data$5 = {
   "key": "v-76bb3376",
   "path": "/php/wechatTime.html",
   "title": "\u65F6\u95F4\u5904\u7406",
-  "lang": "zh-CN",
+  "lang": "en-US",
   "frontmatter": {},
   "excerpt": "",
   "headers": [
@@ -2775,15 +2889,27 @@ var wechatTime_html = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defin
 const data$4 = {
   "key": "v-f81671a0",
   "path": "/yarn/install.html",
-  "title": "Yarn\u5B89\u88C5",
-  "lang": "zh-CN",
+  "title": "Yarn\u5E38\u7528\u547D\u4EE4",
+  "lang": "en-US",
   "frontmatter": {},
   "excerpt": "",
   "headers": [
     {
       "level": 2,
-      "title": "Yarn \u6DD8\u5B9D\u6E90\u5B89\u88C5\uFF0C\u5206\u522B\u590D\u5236\u7C98\u8D34\u4EE5\u4E0B\u4EE3\u7801\u884C\u5230\u9ED1\u7A97\u53E3\u8FD0\u884C\u5373\u53EF",
-      "slug": "yarn-\u6DD8\u5B9D\u6E90\u5B89\u88C5-\u5206\u522B\u590D\u5236\u7C98\u8D34\u4EE5\u4E0B\u4EE3\u7801\u884C\u5230\u9ED1\u7A97\u53E3\u8FD0\u884C\u5373\u53EF",
+      "title": "\u5B89\u88C5",
+      "slug": "\u5B89\u88C5",
+      "children": []
+    },
+    {
+      "level": 2,
+      "title": "\u67E5\u770B\u7248\u672C",
+      "slug": "\u67E5\u770B\u7248\u672C",
+      "children": []
+    },
+    {
+      "level": 2,
+      "title": "\u8BBE\u7F6E\u6DD8\u5B9D\u6E90",
+      "slug": "\u8BBE\u7F6E\u6DD8\u5B9D\u6E90",
       "children": []
     }
   ],
@@ -2807,7 +2933,7 @@ const data$3 = {
   "key": "v-5a7523b2",
   "path": "/php/thinkphp/cron.html",
   "title": "TP5\u5B9A\u65F6\u4EFB\u52A1+\u5B9D\u5854\u8BA1\u5212\u4EFB\u52A1",
-  "lang": "zh-CN",
+  "lang": "en-US",
   "frontmatter": {},
   "excerpt": "",
   "headers": [
@@ -2844,7 +2970,7 @@ const data$2 = {
   "key": "v-03093e3d",
   "path": "/php/thinkphp/hook.html",
   "title": "TP\u6846\u67B6\u884C\u4E3A\u94A9\u5B50\u4F7F\u7528\u65B9\u6CD5",
-  "lang": "zh-CN",
+  "lang": "en-US",
   "frontmatter": {},
   "excerpt": "",
   "headers": [],
@@ -2868,7 +2994,7 @@ const data$1 = {
   "key": "v-57c453ba",
   "path": "/php/thinkphp/swoole.html",
   "title": "TP6\u5B89\u88C5think-swoole",
-  "lang": "zh-CN",
+  "lang": "en-US",
   "frontmatter": {},
   "excerpt": "",
   "headers": [
@@ -2923,7 +3049,7 @@ const data = {
   "key": "v-3706649a",
   "path": "/404.html",
   "title": "",
-  "lang": "zh-CN",
+  "lang": "en-US",
   "frontmatter": {
     "layout": "404"
   },

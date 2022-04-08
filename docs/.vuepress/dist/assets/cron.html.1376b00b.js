@@ -2,7 +2,7 @@ const data = {
   "key": "v-5a7523b2",
   "path": "/php/thinkphp/cron.html",
   "title": "TP5\u5B9A\u65F6\u4EFB\u52A1+\u5B9D\u5854\u8BA1\u5212\u4EFB\u52A1",
-  "lang": "zh-CN",
+  "lang": "en-US",
   "frontmatter": {},
   "excerpt": "",
   "headers": [
