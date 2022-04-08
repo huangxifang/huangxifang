@@ -20,7 +20,7 @@ module.exports = {
           },
           {
             text: 'ThinkPHP',
-            children:[
+            children: [
               {
                 text: 'TP5定时任务',
                 link: '/php/thinkphp/cron.md',
@@ -48,7 +48,7 @@ module.exports = {
           {
             text: 'npm设置淘宝镜像',
             link: '/npm/configRegistry.md',
-          },{
+          }, {
             text: 'Yarn安装',
             link: '/yarn/install.md',
           }
@@ -68,6 +68,21 @@ module.exports = {
         ]
       }
     ],
+    sidebar: {
+      '/php/': [
+        {
+          text: '指南',
+          children: ['/php/wechatTime.md'],
+        },
+        {
+          text: 'ThinkPHP',
+          children: [
+            '/php/thinkphp/cron.md',
+            '/php/thinkphp/swoole.md',
+          ],
+        },
+      ],
+    },
     repo: 'https://huangxifang.github.io'
   },
   dev: {
