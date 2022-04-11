@@ -12,6 +12,12 @@ description: Linux 常用命令
 find / -name '查找关键字' -type d
 ```
 
+## 关闭防火墙
+
+```bash
+service iptables stop
+```
+
 **tips:**  `/` 为查找范围
 
 ## 查找文件

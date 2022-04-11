@@ -13,46 +13,48 @@ module.exports = {
     navbar: [
       {
         text: 'PHP',
+        link: '/php/wechatTime.md',
         children: [
           {
-            text: '时间处理',
-            link: '/php/wechatTime.md',
+            text: '指南',
+            children: ['/php/wechatTime.md'],
           },
           {
             text: 'ThinkPHP',
             children: [
-              {
-                text: 'TP5定时任务',
-                link: '/php/thinkphp/cron.md',
-              },
-              {
-                text: 'TP6安装think-swoole',
-                link: '/php/thinkphp/swoole.md',
-              },
-            ]
-          }
+              '/php/thinkphp/cron.md',
+              '/php/thinkphp/swoole.md',
+            ],
+          },
         ]
       },
       {
         text: 'Linux',
         children: [
-          {
-            text: 'Linux常用命令',
-            link: '/linux/command.md'
-          }
+          '/linux/command.md',
+          '/linux/vmware/install.md',
+          '/linux/vmware/connect-mysql.md',
         ],
       },
       {
         text: 'NPM',
         children: [
-          {
-            text: 'npm设置淘宝镜像',
-            link: '/npm/configRegistry.md',
-          }, {
-            text: 'Yarn安装',
-            link: '/yarn/install.md',
-          }
+          '/npm/configRegistry.md',
+          '/yarn/install.md'
         ]
+      },
+      {
+        text: 'Redis',
+        children: [
+          '/redis/command.md',
+          '/redis/redis-cache.md'
+        ],
+      },
+      {
+        text: 'Yii',
+        children: [
+          '/yii/not-use-gii.md'
+        ],
       },
       {
         text: 'Git',
@@ -68,7 +70,7 @@ module.exports = {
         ]
       }
     ],
-    sidebar: {
+    /* sidebar: {
       '/php/': [
         {
           text: '指南',
@@ -82,7 +84,17 @@ module.exports = {
           ],
         },
       ],
-    },
+      '/linux/': [
+        {
+          children: [
+            '/linux/command.md',
+            '/linux/vmware/install.md',
+            '/linux/vmware/set-dir-share.md',
+            '/linux/vmware/connect-mysql.md',
+          ],
+        }
+      ],
+    }, */
     repo: 'https://huangxifang.github.io'
   },
   dev: {
