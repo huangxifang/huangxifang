@@ -91,6 +91,12 @@ cp -pir /www/wwwroot/ao_dan_si/vendor /www/wwwroot/bak_dir/vendor
 - -i ：若目标文件已经存在，就会询问是否覆盖
 - -u ：若目标文件已经存在，且比目标文件新，才会更新
 
+#### 移动以`sleep_`开头的文件到指定文件夹`sleep`
+
+```shell
+mv sleep_* ./sleep
+```
+
 ### **6.  rm 命令**
 
 用于删除文件或目录，remove之意：

@@ -1,11 +1,12 @@
+const { copyCode } = require("vuepress-plugin-copy-code2");
 module.exports = {
-  base: "/huangxifang/",
+  base: "/",
   // 站点配置
-  lang: 'en-US',
+  lang: 'zh-CN',
   title: '黄西方个人博客',
   description: '个人博客，记录工作内容点滴',
   debug: true,
-  head: [['link', { rel: 'icon', href: '/images/logo.png' }]],
+  port: 8899,
   // 主题和它的配置
   theme: '@vuepress/theme-default',
   themeConfig: {
@@ -32,6 +33,7 @@ module.exports = {
         text: 'Linux',
         children: [
           '/linux/command.md',
+          '/linux/docker-qinglong-jd.md',
           '/linux/vmware/install.md',
           '/linux/vmware/connect-mysql.md',
         ],
@@ -95,9 +97,22 @@ module.exports = {
         }
       ],
     }, */
-    repo: 'https://huangxifang.github.io'
+    repo: 'https://huangxifang.github.io',
+    smoothScroll: true,
+    lastUpdated: '上次更新', // string | boolean
   },
   dev: {
     open: true
-  }
+  },
+  plugins: [
+    [
+      '@vuepress/plugin-search',
+      {
+        placeholder: '搜索',
+      },
+    ],
+    copyCode({
+      // 插件选项
+    }),
+  ]
 }

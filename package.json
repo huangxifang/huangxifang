@@ -6,10 +6,17 @@
   "author": "huangxifang <2906568991@qq.com>",
   "license": "MIT",
   "devDependencies": {
-    "vuepress": "^2.0.0-beta.38"
+    "@vuepress/plugin-search": "^2.0.0-beta.38",
+    "vuepress": "^2.0.0-beta.38",
+    "vuepress-plugin-copy-code2": "^2.0.0-beta.45"
   },
   "scripts": {
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs"
+  },
+  "dependencies": {
+    "@vue/component-compiler-utils": "^3.3.0",
+    "@vuepress/shared-utils": "^1.9.7",
+    "lru-cache": "^7.8.1"
   }
 }
