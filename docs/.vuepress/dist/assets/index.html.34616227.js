@@ -40,12 +40,12 @@ const data = {
     }
   ],
   "git": {
-    "updatedTime": 164941778e4,
+    "updatedTime": 1650356022e3,
     "contributors": [
       {
         "name": "huangxifang",
         "email": "2906568991@qq.com",
-        "commits": 4
+        "commits": 5
       }
     ]
   },

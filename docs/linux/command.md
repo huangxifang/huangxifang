@@ -1,5 +1,4 @@
 ---
-lang: zh-CN
 title: Linux 常用命令
 description: Linux 常用命令
 ---

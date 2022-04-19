@@ -6975,85 +6975,85 @@ const __vitePreload = function preload(baseModule, deps) {
 const pagesComponents = {
   "v-8daa1a0e": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "v-8daa1a0e" */
-    "./index.html.55f5a22b.js"
+    "./index.html.8d5a1f0a.js"
   ), true ? [] : void 0)),
   "v-224c7cf6": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "v-224c7cf6" */
-    "./easyToIgnore.html.78f96ed4.js"
+    "./easyToIgnore.html.b062fba0.js"
   ), true ? [] : void 0)),
   "v-aa042210": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "v-aa042210" */
-    "./common.html.9778ac64.js"
+    "./common.html.a70af679.js"
   ), true ? [] : void 0)),
   "v-46d404d8": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "v-46d404d8" */
-    "./development.html.a59b7a19.js"
+    "./development.html.9242a2e0.js"
   ), true ? [] : void 0)),
   "v-8a42673c": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "v-8a42673c" */
-    "./command.html.810a0fe7.js"
+    "./command.html.6323ed91.js"
   ), true ? [] : void 0)),
   "v-67dd6178": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "v-67dd6178" */
-    "./docker-qinglong-jd.html.962e8853.js"
-  ), true ? [] : void 0)),
-  "v-6bfe5e5d": defineAsyncComponent(() => __vitePreload(() => import(
-    /* webpackChunkName: "v-6bfe5e5d" */
-    "./configRegistry.html.f352df8c.js"
+    "./docker-qinglong-jd.html.4b7e62a3.js"
   ), true ? [] : void 0)),
   "v-76bb3376": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "v-76bb3376" */
-    "./wechatTime.html.46931a15.js"
+    "./wechatTime.html.6164caef.js"
+  ), true ? [] : void 0)),
+  "v-6bfe5e5d": defineAsyncComponent(() => __vitePreload(() => import(
+    /* webpackChunkName: "v-6bfe5e5d" */
+    "./configRegistry.html.4deabba4.js"
   ), true ? [] : void 0)),
   "v-b75be98a": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "v-b75be98a" */
-    "./command.html.993d0539.js"
+    "./command.html.972767b2.js"
   ), true ? [] : void 0)),
   "v-db2b1b14": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "v-db2b1b14" */
-    "./redis-cache.html.c8af6cfb.js"
+    "./redis-cache.html.017e95a6.js"
   ), true ? [] : void 0)),
   "v-f81671a0": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "v-f81671a0" */
-    "./install.html.66c1c298.js"
+    "./install.html.6589bc79.js"
   ), true ? [] : void 0)),
   "v-5ac3e7be": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "v-5ac3e7be" */
-    "./not-use-gii.html.c2b6f0c4.js"
+    "./not-use-gii.html.b2e2f3cc.js"
   ), true ? [] : void 0)),
   "v-b83969fe": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "v-b83969fe" */
-    "./connect-mysql.html.f0162a42.js"
+    "./connect-mysql.html.3014e3a4.js"
   ), true ? [] : void 0)),
   "v-09a5de25": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "v-09a5de25" */
-    "./install.html.b2cbf244.js"
+    "./install.html.0b91ac07.js"
   ), true ? [] : void 0)),
   "v-bd9d09a8": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "v-bd9d09a8" */
-    "./set-dir-share.html.42db939a.js"
+    "./set-dir-share.html.ebf59133.js"
   ), true ? [] : void 0)),
   "v-5a7523b2": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "v-5a7523b2" */
-    "./cron.html.49e3429b.js"
+    "./cron.html.1cbb0353.js"
   ), true ? [] : void 0)),
   "v-03093e3d": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "v-03093e3d" */
-    "./hook.html.4a8e4c4e.js"
+    "./hook.html.81635f42.js"
   ), true ? [] : void 0)),
   "v-57c453ba": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "v-57c453ba" */
-    "./swoole.html.3ccaece1.js"
+    "./swoole.html.6e3a490e.js"
   ), true ? [] : void 0)),
   "v-3706649a": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "v-3706649a" */
-    "./404.html.16451399.js"
+    "./404.html.954d8d03.js"
   ), true ? [] : void 0))
 };
 const pagesData$1 = {
   "v-8daa1a0e": () => __vitePreload(() => import(
     /* webpackChunkName: "v-8daa1a0e" */
-    "./index.html.77f19bed.js"
+    "./index.html.34616227.js"
   ), true ? [] : void 0).then(({ data }) => data),
   "v-224c7cf6": () => __vitePreload(() => import(
     /* webpackChunkName: "v-224c7cf6" */
@@ -7069,19 +7069,19 @@ const pagesData$1 = {
   ), true ? [] : void 0).then(({ data }) => data),
   "v-8a42673c": () => __vitePreload(() => import(
     /* webpackChunkName: "v-8a42673c" */
-    "./command.html.8cc9f27d.js"
+    "./command.html.8a06f7df.js"
   ), true ? [] : void 0).then(({ data }) => data),
   "v-67dd6178": () => __vitePreload(() => import(
     /* webpackChunkName: "v-67dd6178" */
-    "./docker-qinglong-jd.html.acacdc75.js"
-  ), true ? [] : void 0).then(({ data }) => data),
-  "v-6bfe5e5d": () => __vitePreload(() => import(
-    /* webpackChunkName: "v-6bfe5e5d" */
-    "./configRegistry.html.6b573ed2.js"
+    "./docker-qinglong-jd.html.425f9100.js"
   ), true ? [] : void 0).then(({ data }) => data),
   "v-76bb3376": () => __vitePreload(() => import(
     /* webpackChunkName: "v-76bb3376" */
     "./wechatTime.html.3ab9e41b.js"
+  ), true ? [] : void 0).then(({ data }) => data),
+  "v-6bfe5e5d": () => __vitePreload(() => import(
+    /* webpackChunkName: "v-6bfe5e5d" */
+    "./configRegistry.html.6b573ed2.js"
   ), true ? [] : void 0).then(({ data }) => data),
   "v-b75be98a": () => __vitePreload(() => import(
     /* webpackChunkName: "v-b75be98a" */
@@ -7229,11 +7229,11 @@ Content.props = {
 const layoutComponents = {
   "404": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "layout-404" */
-    "./404.f9446fb8.js"
+    "./404.5847e589.js"
   ), true ? [] : void 0)),
   "Layout": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "layout-Layout" */
-    "./Layout.5ad669f0.js"
+    "./Layout.e793bf8e.js"
   ), true ? [] : void 0))
 };
 const resolveHeadIdentifier = ([tag, attrs, content]) => {
@@ -7921,7 +7921,8 @@ const themeData$1 = {
   ],
   "repo": "https://huangxifang.github.io",
   "smoothScroll": true,
-  "lastUpdated": "\u4E0A\u6B21\u66F4\u65B0",
+  "lastUpdatedText": "\u4E0A\u6B21\u66F4\u65B0",
+  "contributorsText": "\u8D21\u732E\u8005",
   "locales": {
     "/": {
       "selectLanguageName": "English"
@@ -7934,9 +7935,8 @@ const themeData$1 = {
   "sidebarDepth": 2,
   "editLink": true,
   "editLinkText": "Edit this page",
-  "lastUpdatedText": "Last Updated",
+  "lastUpdated": true,
   "contributors": true,
-  "contributorsText": "Contributors",
   "notFound": [
     "There's nothing here.",
     "How did we get here?",
@@ -9291,13 +9291,6 @@ const searchIndex$1 = [
     "extraFields": []
   },
   {
-    "title": "npm\u8BBE\u7F6E\u6DD8\u5B9D\u6E90",
-    "headers": [],
-    "path": "/npm/configRegistry.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
     "title": "\u65F6\u95F4\u5904\u7406",
     "headers": [
       {
@@ -9320,6 +9313,13 @@ const searchIndex$1 = [
       }
     ],
     "path": "/php/wechatTime.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "npm\u8BBE\u7F6E\u6DD8\u5B9D\u6E90",
+    "headers": [],
+    "path": "/npm/configRegistry.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -10659,8 +10659,8 @@ const routeItems = [
   ["v-46d404d8", "/git/development.html", { "title": "Git\u5F00\u53D1\u6D41\u7A0B\u5EFA\u8BAE" }, ["/git/development", "/git/development.md"]],
   ["v-8a42673c", "/linux/command.html", { "title": "Linux \u5E38\u7528\u547D\u4EE4" }, ["/linux/command", "/linux/command.md"]],
   ["v-67dd6178", "/linux/docker-qinglong-jd.html", { "title": "centos7\u5B89\u88C5\u9752\u9F99\u9762\u677F\uFF08JD\u7B7E\u5230\uFF09" }, ["/linux/docker-qinglong-jd", "/linux/docker-qinglong-jd.md"]],
-  ["v-6bfe5e5d", "/npm/configRegistry.html", { "title": "npm\u8BBE\u7F6E\u6DD8\u5B9D\u6E90" }, ["/npm/configRegistry", "/npm/configRegistry.md"]],
   ["v-76bb3376", "/php/wechatTime.html", { "title": "\u65F6\u95F4\u5904\u7406" }, ["/php/wechatTime", "/php/wechatTime.md"]],
+  ["v-6bfe5e5d", "/npm/configRegistry.html", { "title": "npm\u8BBE\u7F6E\u6DD8\u5B9D\u6E90" }, ["/npm/configRegistry", "/npm/configRegistry.md"]],
   ["v-b75be98a", "/redis/command.html", { "title": "Redis\u547D\u4EE4\u884C" }, ["/redis/command", "/redis/command.md"]],
   ["v-db2b1b14", "/redis/redis-cache.html", { "title": "Redis\u7F13\u5B58\u7A7F\u900F\u3001\u7F13\u5B58\u51FB\u7A7F\u3001\u7F13\u5B58\u96EA\u5D29\u7684\u539F\u7406\u548C\u89E3\u51B3\u529E\u6CD5" }, ["/redis/redis-cache", "/redis/redis-cache.md"]],
   ["v-f81671a0", "/yarn/install.html", { "title": "Yarn\u5E38\u7528\u547D\u4EE4" }, ["/yarn/install", "/yarn/install.md"]],

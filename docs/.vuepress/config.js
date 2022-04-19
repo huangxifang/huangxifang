@@ -5,7 +5,11 @@ module.exports = {
   lang: 'zh-CN',
   title: '黄西方个人博客',
   description: '个人博客，记录工作内容点滴',
-  debug: true,
+  // debug: true,
+  dev: {
+    open: true,
+    port: 8899,
+  },
   port: 8899,
   // 主题和它的配置
   theme: '@vuepress/theme-default',
@@ -99,11 +103,10 @@ module.exports = {
     }, */
     repo: 'https://huangxifang.github.io',
     smoothScroll: true,
-    lastUpdated: '上次更新', // string | boolean
+    lastUpdatedText: '上次更新',
+    contributorsText: '贡献者'
   },
-  dev: {
-    open: true
-  },
+  
   plugins: [
     [
       '@vuepress/plugin-search',

@@ -77,11 +77,11 @@ const pagesComponents = {
   "v-67dd6178": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
     return dockerQinglongJd_html$2;
   })),
-  "v-6bfe5e5d": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return configRegistry_html$2;
-  })),
   "v-76bb3376": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
     return wechatTime_html$2;
+  })),
+  "v-6bfe5e5d": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
+    return configRegistry_html$2;
   })),
   "v-b75be98a": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
     return command_html$3;
@@ -136,11 +136,11 @@ const pagesData$1 = {
   "v-67dd6178": () => Promise.resolve().then(function() {
     return dockerQinglongJd_html;
   }).then(({ data: data2 }) => data2),
-  "v-6bfe5e5d": () => Promise.resolve().then(function() {
-    return configRegistry_html;
-  }).then(({ data: data2 }) => data2),
   "v-76bb3376": () => Promise.resolve().then(function() {
     return wechatTime_html;
+  }).then(({ data: data2 }) => data2),
+  "v-6bfe5e5d": () => Promise.resolve().then(function() {
+    return configRegistry_html;
   }).then(({ data: data2 }) => data2),
   "v-b75be98a": () => Promise.resolve().then(function() {
     return command_html;
@@ -505,7 +505,8 @@ const themeData$1 = {
   ],
   "repo": "https://huangxifang.github.io",
   "smoothScroll": true,
-  "lastUpdated": "\u4E0A\u6B21\u66F4\u65B0",
+  "lastUpdatedText": "\u4E0A\u6B21\u66F4\u65B0",
+  "contributorsText": "\u8D21\u732E\u8005",
   "locales": {
     "/": {
       "selectLanguageName": "English"
@@ -518,9 +519,8 @@ const themeData$1 = {
   "sidebarDepth": 2,
   "editLink": true,
   "editLinkText": "Edit this page",
-  "lastUpdatedText": "Last Updated",
+  "lastUpdated": true,
   "contributors": true,
-  "contributorsText": "Contributors",
   "notFound": [
     "There's nothing here.",
     "How did we get here?",
@@ -1591,13 +1591,6 @@ const searchIndex$1 = [
     "extraFields": []
   },
   {
-    "title": "npm\u8BBE\u7F6E\u6DD8\u5B9D\u6E90",
-    "headers": [],
-    "path": "/npm/configRegistry.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
     "title": "\u65F6\u95F4\u5904\u7406",
     "headers": [
       {
@@ -1620,6 +1613,13 @@ const searchIndex$1 = [
       }
     ],
     "path": "/php/wechatTime.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "npm\u8BBE\u7F6E\u6DD8\u5B9D\u6E90",
+    "headers": [],
+    "path": "/npm/configRegistry.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -2616,8 +2616,8 @@ const routeItems = [
   ["v-46d404d8", "/git/development.html", { "title": "Git\u5F00\u53D1\u6D41\u7A0B\u5EFA\u8BAE" }, ["/git/development", "/git/development.md"]],
   ["v-8a42673c", "/linux/command.html", { "title": "Linux \u5E38\u7528\u547D\u4EE4" }, ["/linux/command", "/linux/command.md"]],
   ["v-67dd6178", "/linux/docker-qinglong-jd.html", { "title": "centos7\u5B89\u88C5\u9752\u9F99\u9762\u677F\uFF08JD\u7B7E\u5230\uFF09" }, ["/linux/docker-qinglong-jd", "/linux/docker-qinglong-jd.md"]],
-  ["v-6bfe5e5d", "/npm/configRegistry.html", { "title": "npm\u8BBE\u7F6E\u6DD8\u5B9D\u6E90" }, ["/npm/configRegistry", "/npm/configRegistry.md"]],
   ["v-76bb3376", "/php/wechatTime.html", { "title": "\u65F6\u95F4\u5904\u7406" }, ["/php/wechatTime", "/php/wechatTime.md"]],
+  ["v-6bfe5e5d", "/npm/configRegistry.html", { "title": "npm\u8BBE\u7F6E\u6DD8\u5B9D\u6E90" }, ["/npm/configRegistry", "/npm/configRegistry.md"]],
   ["v-b75be98a", "/redis/command.html", { "title": "Redis\u547D\u4EE4\u884C" }, ["/redis/command", "/redis/command.md"]],
   ["v-db2b1b14", "/redis/redis-cache.html", { "title": "Redis\u7F13\u5B58\u7A7F\u900F\u3001\u7F13\u5B58\u51FB\u7A7F\u3001\u7F13\u5B58\u96EA\u5D29\u7684\u539F\u7406\u548C\u89E3\u51B3\u529E\u6CD5" }, ["/redis/redis-cache", "/redis/redis-cache.md"]],
   ["v-f81671a0", "/yarn/install.html", { "title": "Yarn\u5E38\u7528\u547D\u4EE4" }, ["/yarn/install", "/yarn/install.md"]],
@@ -3377,23 +3377,6 @@ var dockerQinglongJd_html$2 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Obje
 }, Symbol.toStringTag, { value: "Module" }));
 const _sfc_main$x = {};
 function _sfc_ssrRender$d(_ctx, _push, _parent, _attrs) {
-  _push(`<!--[--><h1 id="npm\u8BBE\u7F6E\u6DD8\u5B9D\u6E90" tabindex="-1"><a class="header-anchor" href="#npm\u8BBE\u7F6E\u6DD8\u5B9D\u6E90" aria-hidden="true">#</a> npm\u8BBE\u7F6E\u6DD8\u5B9D\u6E90</h1><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code><span class="token function">npm</span> config <span class="token builtin class-name">set</span> registry http://registry.npm.taobao.org/
-</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br></div></div><p>\u8FD8\u539F</p><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code><span class="token function">npm</span> config <span class="token builtin class-name">set</span> registry https://registry.npmjs.org/
-</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br></div></div><!--]-->`);
-}
-const _sfc_setup$x = _sfc_main$x.setup;
-_sfc_main$x.setup = (props, ctx) => {
-  const ssrContext = vue.useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../pages/npm/configRegistry.html.vue");
-  return _sfc_setup$x ? _sfc_setup$x(props, ctx) : void 0;
-};
-var configRegistry_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$x, [["ssrRender", _sfc_ssrRender$d], ["__file", "configRegistry.html.vue"]]);
-var configRegistry_html$2 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
-  __proto__: null,
-  "default": configRegistry_html$1
-}, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$w = {};
-function _sfc_ssrRender$c(_ctx, _push, _parent, _attrs) {
   _push(`<!--[--><h1 id="\u65F6\u95F4\u5904\u7406" tabindex="-1"><a class="header-anchor" href="#\u65F6\u95F4\u5904\u7406" aria-hidden="true">#</a> \u65F6\u95F4\u5904\u7406</h1><h2 id="\u5224\u65AD\u4E0A\u5348\u8FD8\u662F\u4E0B\u5348" tabindex="-1"><a class="header-anchor" href="#\u5224\u65AD\u4E0A\u5348\u8FD8\u662F\u4E0B\u5348" aria-hidden="true">#</a> \u5224\u65AD\u4E0A\u5348\u8FD8\u662F\u4E0B\u5348</h2><blockquote><p>php\u5224\u65AD\u4E0A\u5348\u8FD8\u662F\u4E0B\u5348\u7684\u5B9E\u73B0\u65B9\u6CD5\uFF1A\u9996\u5148\u8BBE\u7F6E\u4E2D\u56FD\u65F6\u533A\uFF1B\u7136\u540E\u5B9A\u4E49\u4E00\u4E2AGetDateTime\u65B9\u6CD5\uFF1B\u7136\u540E\u901A\u8FC7if else\u8BED\u53E5\u5224\u65AD\u5F53\u524D\u65F6\u95F4\u662F\u4E0A\u5348\u8FD8\u662F\u4E0B\u5348\uFF1B\u6700\u540E\u8F93\u51FA\u5224\u65AD\u7ED3\u679C\u5373\u53EF\u3002</p></blockquote><p>\u6839\u636E\u5F53\u524D\u65F6\u95F4\u5224\u65AD\u4E0A\u5348\u597D\u3001\u4E0B\u5348\u597D</p><div class="language-php ext-php line-numbers-mode"><pre class="language-php"><code><span class="token function">header</span><span class="token punctuation">(</span><span class="token string double-quoted-string">&quot;Content-type:text/html;charset=utf-8&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
 <span class="token function">date_default_timezone_set</span><span class="token punctuation">(</span><span class="token string single-quoted-string">&#39;PRC&#39;</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//\u8BBE\u7F6E\u4E2D\u56FD\u65F6\u533A</span>
@@ -3482,16 +3465,33 @@ function _sfc_ssrRender$c(_ctx, _push, _parent, _attrs) {
     <span class="token punctuation">}</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br></div></div><!--]-->`);
 }
-const _sfc_setup$w = _sfc_main$w.setup;
-_sfc_main$w.setup = (props, ctx) => {
+const _sfc_setup$x = _sfc_main$x.setup;
+_sfc_main$x.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../pages/php/wechatTime.html.vue");
-  return _sfc_setup$w ? _sfc_setup$w(props, ctx) : void 0;
+  return _sfc_setup$x ? _sfc_setup$x(props, ctx) : void 0;
 };
-var wechatTime_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$w, [["ssrRender", _sfc_ssrRender$c], ["__file", "wechatTime.html.vue"]]);
+var wechatTime_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$x, [["ssrRender", _sfc_ssrRender$d], ["__file", "wechatTime.html.vue"]]);
 var wechatTime_html$2 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": wechatTime_html$1
+}, Symbol.toStringTag, { value: "Module" }));
+const _sfc_main$w = {};
+function _sfc_ssrRender$c(_ctx, _push, _parent, _attrs) {
+  _push(`<!--[--><h1 id="npm\u8BBE\u7F6E\u6DD8\u5B9D\u6E90" tabindex="-1"><a class="header-anchor" href="#npm\u8BBE\u7F6E\u6DD8\u5B9D\u6E90" aria-hidden="true">#</a> npm\u8BBE\u7F6E\u6DD8\u5B9D\u6E90</h1><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code><span class="token function">npm</span> config <span class="token builtin class-name">set</span> registry http://registry.npm.taobao.org/
+</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br></div></div><p>\u8FD8\u539F</p><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code><span class="token function">npm</span> config <span class="token builtin class-name">set</span> registry https://registry.npmjs.org/
+</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br></div></div><!--]-->`);
+}
+const _sfc_setup$w = _sfc_main$w.setup;
+_sfc_main$w.setup = (props, ctx) => {
+  const ssrContext = vue.useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../pages/npm/configRegistry.html.vue");
+  return _sfc_setup$w ? _sfc_setup$w(props, ctx) : void 0;
+};
+var configRegistry_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$w, [["ssrRender", _sfc_ssrRender$c], ["__file", "configRegistry.html.vue"]]);
+var configRegistry_html$2 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": configRegistry_html$1
 }, Symbol.toStringTag, { value: "Module" }));
 const _sfc_main$v = {};
 function _sfc_ssrRender$b(_ctx, _push, _parent, _attrs) {
@@ -3922,12 +3922,12 @@ const data$i = {
     }
   ],
   "git": {
-    "updatedTime": 164941778e4,
+    "updatedTime": 1650356022e3,
     "contributors": [
       {
         "name": "huangxifang",
         "email": "2906568991@qq.com",
-        "commits": 4
+        "commits": 5
       }
     ]
   },
@@ -4579,12 +4579,12 @@ const data$e = {
     }
   ],
   "git": {
-    "updatedTime": 164967113e4,
+    "updatedTime": 1650356022e3,
     "contributors": [
       {
         "name": "huangxifang",
         "email": "2906568991@qq.com",
-        "commits": 3
+        "commits": 4
       }
     ]
   },
@@ -4628,25 +4628,7 @@ const data$d = {
     }
   ],
   "git": {
-    "updatedTime": null,
-    "contributors": []
-  },
-  "filePathRelative": "linux/docker-qinglong-jd.md"
-};
-var dockerQinglongJd_html = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
-  __proto__: null,
-  data: data$d
-}, Symbol.toStringTag, { value: "Module" }));
-const data$c = {
-  "key": "v-6bfe5e5d",
-  "path": "/npm/configRegistry.html",
-  "title": "npm\u8BBE\u7F6E\u6DD8\u5B9D\u6E90",
-  "lang": "zh-CN",
-  "frontmatter": {},
-  "excerpt": "",
-  "headers": [],
-  "git": {
-    "updatedTime": 1649323648e3,
+    "updatedTime": 1650356022e3,
     "contributors": [
       {
         "name": "huangxifang",
@@ -4655,13 +4637,13 @@ const data$c = {
       }
     ]
   },
-  "filePathRelative": "npm/configRegistry.md"
+  "filePathRelative": "linux/docker-qinglong-jd.md"
 };
-var configRegistry_html = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var dockerQinglongJd_html = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  data: data$c
+  data: data$d
 }, Symbol.toStringTag, { value: "Module" }));
-const data$b = {
+const data$c = {
   "key": "v-76bb3376",
   "path": "/php/wechatTime.html",
   "title": "\u65F6\u95F4\u5904\u7406",
@@ -4701,6 +4683,30 @@ const data$b = {
   "filePathRelative": "php/wechatTime.md"
 };
 var wechatTime_html = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  data: data$c
+}, Symbol.toStringTag, { value: "Module" }));
+const data$b = {
+  "key": "v-6bfe5e5d",
+  "path": "/npm/configRegistry.html",
+  "title": "npm\u8BBE\u7F6E\u6DD8\u5B9D\u6E90",
+  "lang": "zh-CN",
+  "frontmatter": {},
+  "excerpt": "",
+  "headers": [],
+  "git": {
+    "updatedTime": 1649323648e3,
+    "contributors": [
+      {
+        "name": "huangxifang",
+        "email": "2906568991@qq.com",
+        "commits": 1
+      }
+    ]
+  },
+  "filePathRelative": "npm/configRegistry.md"
+};
+var configRegistry_html = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   data: data$b
 }, Symbol.toStringTag, { value: "Module" }));

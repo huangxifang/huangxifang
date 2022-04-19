@@ -32,8 +32,14 @@ const data = {
     }
   ],
   "git": {
-    "updatedTime": null,
-    "contributors": []
+    "updatedTime": 1650356022e3,
+    "contributors": [
+      {
+        "name": "huangxifang",
+        "email": "2906568991@qq.com",
+        "commits": 1
+      }
+    ]
   },
   "filePathRelative": "linux/docker-qinglong-jd.md"
 };
