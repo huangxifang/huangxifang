@@ -8,7 +8,6 @@ module.exports = {
   // debug: true,
   dev: {
     open: true,
-    port: 8899,
   },
   port: 8899,
   // 主题和它的配置
@@ -37,14 +36,17 @@ module.exports = {
         text: 'Linux',
         children: [
           '/linux/command.md',
+          '/linux/docker-command.md',
+          '/linux/docker-elasticsearch.md',
           '/linux/docker-qinglong-jd.md',
           '/linux/vmware/install.md',
           '/linux/vmware/connect-mysql.md',
         ],
       },
       {
-        text: 'NPM',
+        text: 'Nodejs',
         children: [
+          '/npm/composerAliCloud.md',
           '/npm/configRegistry.md',
           '/yarn/install.md'
         ]
@@ -59,7 +61,8 @@ module.exports = {
       {
         text: 'Yii',
         children: [
-          '/yii/not-use-gii.md'
+          '/yii/not-use-gii.md',
+          '/yii/yii-gii-command.md'
         ],
       },
       {
@@ -73,6 +76,12 @@ module.exports = {
             text: 'Git开发流程建议',
             link: '/git/development.md',
           }
+        ]
+      },
+      {
+        text: 'Go',
+        children: [
+          '/go/guide.md',
         ]
       }
     ],
