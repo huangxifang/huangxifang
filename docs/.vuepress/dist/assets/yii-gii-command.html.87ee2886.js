@@ -1,0 +1,10 @@
+import{_ as a,c as s}from"./app.44f8184c.js";const n={},e=s(`<h1 id="yii2-\u547D\u4EE4\u884Cgii\u547D\u4EE4" tabindex="-1"><a class="header-anchor" href="#yii2-\u547D\u4EE4\u884Cgii\u547D\u4EE4" aria-hidden="true">#</a> yii2 \u547D\u4EE4\u884Cgii\u547D\u4EE4</h1><h2 id="\u67E5\u770B\u547D\u4EE4\u8BF4\u660E" tabindex="-1"><a class="header-anchor" href="#\u67E5\u770B\u547D\u4EE4\u8BF4\u660E" aria-hidden="true">#</a> \u67E5\u770B\u547D\u4EE4\u8BF4\u660E</h2><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code>php yii <span class="token builtin class-name">help</span> gii/model
+</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br></div></div><h2 id="\u751F\u6210model" tabindex="-1"><a class="header-anchor" href="#\u751F\u6210model" aria-hidden="true">#</a> \u751F\u6210model</h2><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code>php yii gii/model 
+--enableI18N<span class="token operator">=</span><span class="token number">1</span> 
+--generateLabelsFromComments<span class="token operator">=</span><span class="token number">1</span> 
+--overwrite<span class="token operator">=</span><span class="token number">1</span> 
+--useTablePrefix<span class="token operator">=</span><span class="token number">1</span> 
+--ns<span class="token operator">=</span>common<span class="token punctuation">\\</span>models  
+--tableName<span class="token operator">=</span>goods 
+--modelClass<span class="token operator">=</span>Goods
+</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div>`,5);function r(i,l){return e}var p=a(n,[["render",r],["__file","yii-gii-command.html.vue"]]);export{p as default};

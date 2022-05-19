@@ -1,0 +1,1 @@
+const t={key:"v-49ebf352",path:"/yii/api-log.html",title:"Yii2 \u5982\u4F55\u4F18\u96C5\u7684\u8BB0\u5F55\u63A5\u53E3\u65E5\u5FD7",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:null,contributors:[]},filePathRelative:"yii/api-log.md"};export{t as data};

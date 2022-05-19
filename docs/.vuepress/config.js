@@ -24,6 +24,14 @@ module.exports = {
             children: ['/php/wechatTime.md'],
           },
           {
+            text: 'Yii2',
+            children: [
+              '/yii/api-log.md',
+              '/yii/not-use-gii.md',
+              '/yii/yii-gii-command.md'
+            ],
+          },
+          {
             text: 'ThinkPHP',
             children: [
               '/php/thinkphp/cron.md',
@@ -59,10 +67,9 @@ module.exports = {
         ],
       },
       {
-        text: 'Yii',
+        text: 'Vue',
         children: [
-          '/yii/not-use-gii.md',
-          '/yii/yii-gii-command.md'
+          '/vue/tinymce-local.md',
         ],
       },
       {
